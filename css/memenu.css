@@ -50,10 +50,10 @@
 }
 .me-one ul li a:hover{
 	text-decoration:none;
-	color:#73B6E1;
+	color:#ff6600;
 }
 .me-one h4 {
-    color: #73B6E1;
+    color: #ff6600;
     font-size: 1.1em;
     text-align: left;
 }
@@ -146,7 +146,7 @@
 	color:#000;
 }
 .skyblue>li:hover>a,.skyblue>li.active>a,.skyblue .dropdown li:hover>a{
-	color:#73B6E1;
+	color:#ff6600;
 }.
 skyblue .mepanel img:hover,.skyblue form.contact input[type="text"]:focus,.skyblue form.contact textarea:focus{
 	border:solid 1px #0194be;
