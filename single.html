@@ -6,51 +6,257 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 -->
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Luxury Watches A Ecommerce Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
-<script src="js/jquery-1.11.0.min.js"></script>
-<!--Custom-Theme-files-->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Luxury Watches Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/all.css">
+	<title>Luxury Watches A Ecommerce Category Flat Bootstarp Resposive Website Template | Single :: w3layouts</title>
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<!--Custom-Theme-files-->
+	<!--theme-style-->
+	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" href="simple.js">
+	<!--//theme-style-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" href="login.css">
+	<meta name="keywords" content="Luxury Watches Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--start-menu-->
-<script src="js/simpleCart.min.js"> </script>
-<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-<script type="text/javascript" src="js/memenu.js"></script>
-<script>$(document).ready(function(){$(".memenu").memenu();});</script>	
-<!--dropdown-->
-<script src="js/jquery.easydropdown.js"></script>	
-<script type="text/javascript">
-	$(function() {
-	
-	    var menu_ul = $('.menu_drop > li > ul'),
-	           menu_a  = $('.menu_drop > li > a');
-	    
-	    menu_ul.hide();
-	
-	    menu_a.click(function(e) {
-	        e.preventDefault();
-	        if(!$(this).hasClass('active')) {
-	            menu_a.removeClass('active');
-	            menu_ul.filter(':visible').slideUp('normal');
-	            $(this).addClass('active').next().stop(true,true).slideDown('normal');
-	        } else {
-	            $(this).removeClass('active');
-	            $(this).next().stop(true,true).slideUp('normal');
-	        }
-	    });
-	
-	});
-</script>		
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<!--start-menu-->
+	<script src="js/simpleCart.min.js"> </script>
+	<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="js/memenu.js"></script>
+	<script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+	<!--dropdown-->
+	<script src="js/jquery.easydropdown.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var menu_ul = $('.menu_drop > li > ul'),
+				menu_a = $('.menu_drop > li > a');
+
+			menu_ul.hide();
+
+			menu_a.click(function (e) {
+				e.preventDefault();
+				if (!$(this).hasClass('active')) {
+					menu_a.removeClass('active');
+					menu_ul.filter(':visible').slideUp('normal');
+					$(this).addClass('active').next().stop(true, true).slideDown('normal');
+				} else {
+					$(this).removeClass('active');
+					$(this).next().stop(true, true).slideUp('normal');
+				}
+			});
+
+		});
+	</script>
 </head>
-<body> 
+
+<body>
+	<div class="baongoai">
+		<form id="formchondiachi" onsubmit="return formdiachi()">
+			<div class="chondiachi">
+				<button id="close"><img src="close.png" alt=""> </button>
+				<h2>Địa chỉ giao hàng</h2>
+				<p class="donggoivanchuyen">Hãy chọn địa chỉ nhận hàng để được dự báo thời gian giao hàng cùng phí đóng
+					gói, vận chuyển một cách
+					chính
+					xác nhất.</p>
+				<div id="dangnhapdechon">
+					<p id="dn">Đăng nhập để chọn địa chỉ giao hàng</p>
+				</div>
+				<div class="duongke"></div>
+				<div class="hoac">hoặc</div>
+				<div class="chonkhuvuc">
+					<p class="donggoivanchuyen">Chọn khu vực mua hàng</p>
+				</div>
+				<div class="tinh">
+					<div class="trai">
+						<p>Tỉnh/Thành phố</p>
+					</div>
+					<div class="phai">
+						<input type="text" id="email1" name="email" placeholder="Nhập Tỉnh/Thành phố"
+							class="Input-sc-17i9bto-0 bYlDgr" value="">
+						<p class="baoloi" id="message1"></p>
+					</div>
+				</div>
+				<div class="tinh">
+					<div class="trai">
+						<p>Quận/Huyện</p>
+					</div>
+					<div class="phai">
+						<input type="text" id="email2" name="email" placeholder="Nhập Quận/Huyện"
+							class="Input-sc-17i9bto-0 bYlDgr" value="">
+						<p class="baoloi" id="message2"></p>
+					</div>
+				</div>
+				<div class="tinh">
+					<div class="trai">
+						<p>Phường/Xã</p>
+					</div>
+					<div class="phai">
+						<input type="text" id="email3" name="email" placeholder="Nhập Phường/xã"
+							class="Input-sc-17i9bto-0 bYlDgr" value="">
+						<p class="baoloi" id="message3"></p>
+					</div>
+				</div>
+
+				<input type="submit" id="giaodendiachinay" value="Giao đến địa chỉ này">
+
+		</form>
+	</div>
+	<form id="formdangnhap" onsubmit="return formdangnhap1()">
+		<div class="dangnhap">
+
+
+			<button id="close"><img src="close.png" alt=""> </button>
+			<h2>Đăng nhập</h2>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email/SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email4" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message4"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mật khẩu</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email5" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message5"></p>
+				</div>
+			</div>
+			<div class="quenmatkhau">
+
+			</div>
+			<div class="quenmatkhau">
+				<p>Quên mật khẩu? Nhấn vào <a id="day">đây</a> </p>
+			</div>
+
+			<input type="submit" id="buttondangnhap" value="Đăng nhập">
+			<div class="buttondangnhap2">
+				<p class="btndangnhap">Đăng nhập băng Facebook</p>
+			</div>
+			<div class="buttondangnhap3">
+				<p class="btndangnhap">Đăng nhập băng Google</p>
+			</div>
+			<div class="buttondangnhap4">
+				<p class="btndangnhap"> Đăng nhập bằng Zalo</p>
+			</div>
+
+			<p class="linkdangky">Bạn mới biết đến HKT? <a id="close1">Đăng ký </a> </p>
+		</div>
+
+	</form>
+
+	<div class="oquenmatkhau">
+		<form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
+
+			<button id="close" style="margin-top:-35px"><img src="close.png" alt=""> </button>
+			<h2>Quên mật khẩu</h2>
+			<p>Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại mật khẩu.</p>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email/SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email6" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+
+				</div>
+
+
+			</div>
+			<div class="baoloi1">
+				<p id="message6"></p>
+			</div>
+
+			<button class="buttondangnhap3">
+				Gửi
+			</button>
+		</form>
+
+	</div>
+	<div class="dangki">
+		<form id="formdangki" onsubmit="return formdangki1()">
+
+			<button id="close"><img src="close.png" alt=""> </button>
+			<h2>Đăng nhập</h2>
+			<div class="tinh">
+				<div class="trai">
+					<p>Họ tên</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email7" name="email" placeholder="Nhập họ tên"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message7"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email8" name="password" placeholder="Nhập số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message8"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mã xác thực</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email9" name="password"
+						placeholder="Nhập mã xác thực gửi tới số điện thoại" class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message9"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email10" name="password" placeholder="Nhập email"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message10"></p>
+				</div>
+
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mật khẩu</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email11" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message11"></p>
+				</div>
+			</div>
+			<div class="quenmatkhau">
+
+			</div>
+
+
+
+			<input type="submit" class="buttondangki" value="Đăng kí">
+		</form>
+
+
+	</div>
+	</div>
 	<!--top-header-->
 	<div class="top-header">
 		<div class="container">
@@ -80,7 +286,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<a href="checkout.html">
 							<div class="total">
 								<span class="simpleCart_total"></span></div>
-								<img src="images/cart-1.png" alt="" />
+							<img src="images/cart-1.png" alt="" />
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						<div class="clearfix"> </div>
@@ -93,7 +299,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--top-header-->
 	<!--start-logo-->
 	<div class="logo">
-		<a href="index.html"><h1>Luxury Watches</h1></a>
+		<a href="index.html">
+			<h1>Luxury Watches</h1>
+		</a>
 	</div>
 	<!--start-logo-->
 	<!--bottom-header-->
@@ -101,152 +309,154 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="header">
 				<div class="col-md-9 header-left">
-				<div class="top-nav">
-					<ul class="memenu skyblue"><li class="active"><a href="index.html">Home</a></li>
-						<li class="grid"><a href="#">Men</a>
-							<div class="mepanel">
-								<div class="row">
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>
-											<li><a href="products.html">New Arrivals</a></li>
-											<li><a href="products.html">Blazers</a></li>
-											<li><a href="products.html">Swem Wear</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Handbags</a></li>
-											<li><a href="products.html">T-Shirts</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">My Shopping Bag</a></li>
-										</ul>
-									</div>
-									<div class="col1 me-one">
-										<h4>Style Zone</h4>
-										<ul>
-											<li><a href="products.html">Shoes</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">Brands</a></li>
-											<li><a href="products.html">Coats</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Trousers</a></li>
-										</ul>	
-									</div>
-									<div class="col1 me-one">
-										<h4>Popular Brands</h4>
-										<ul>
-											<li><a href="products.html">499 Store</a></li>
-											<li><a href="products.html">Fastrack</a></li>
-											<li><a href="products.html">Casio</a></li>
-											<li><a href="products.html">Fossil</a></li>
-											<li><a href="products.html">Maxima</a></li>
-											<li><a href="products.html">Timex</a></li>
-											<li><a href="products.html">TomTom</a></li>
-											<li><a href="products.html">Titan</a></li>
-										</ul>		
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="grid"><a href="#">Women</a>
-							<div class="mepanel">
-								<div class="row">
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>
-											<li><a href="products.html">New Arrivals</a></li>
-											<li><a href="products.html">Blazers</a></li>
-											<li><a href="products.html">Swem Wear</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Handbags</a></li>
-											<li><a href="products.html">T-Shirts</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">My Shopping Bag</a></li>
-										</ul>
-									</div>
-									<div class="col1 me-one">
-										<h4>Style Zone</h4>
-										<ul>
-											<li><a href="products.html">Shoes</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">Brands</a></li>
-											<li><a href="products.html">Coats</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Trousers</a></li>
-										</ul>
-									</div>
-									<div class="col1 me-one">
-										<h4>Popular Brands</h4>
-										<ul>
-											<li><a href="products.html">499 Store</a></li>
-											<li><a href="products.html">Fastrack</a></li>
-											<li><a href="products.html">Casio</a></li>
-											<li><a href="products.html">Fossil</a></li>
-											<li><a href="products.html">Maxima</a></li>
-											<li><a href="products.html">Timex</a></li>
-											<li><a href="products.html">TomTom</a></li>
-											<li><a href="products.html">Titan</a></li>
-										</ul>	
+					<div class="top-nav">
+						<ul class="memenu skyblue">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li class="grid"><a href="#">Men</a>
+								<div class="mepanel">
+									<div class="row">
+										<div class="col1 me-one">
+											<h4>Shop</h4>
+											<ul>
+												<li><a href="products.html">New Arrivals</a></li>
+												<li><a href="products.html">Blazers</a></li>
+												<li><a href="products.html">Swem Wear</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Handbags</a></li>
+												<li><a href="products.html">T-Shirts</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">My Shopping Bag</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Style Zone</h4>
+											<ul>
+												<li><a href="products.html">Shoes</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">Brands</a></li>
+												<li><a href="products.html">Coats</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Trousers</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Popular Brands</h4>
+											<ul>
+												<li><a href="products.html">499 Store</a></li>
+												<li><a href="products.html">Fastrack</a></li>
+												<li><a href="products.html">Casio</a></li>
+												<li><a href="products.html">Fossil</a></li>
+												<li><a href="products.html">Maxima</a></li>
+												<li><a href="products.html">Timex</a></li>
+												<li><a href="products.html">TomTom</a></li>
+												<li><a href="products.html">Titan</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
-							</div>
-						</li>
-						<li class="grid"><a href="#">Kids</a>
-							<div class="mepanel">
-								<div class="row">
-									<div class="col1 me-one">
-										<h4>Shop</h4>
-										<ul>
-											<li><a href="products.html">New Arrivals</a></li>
-											<li><a href="products.html">Blazers</a></li>
-											<li><a href="products.html">Swem Wear</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Handbags</a></li>
-											<li><a href="products.html">T-Shirts</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">My Shopping Bag</a></li>
-										</ul>
-									</div>
-									<div class="col1 me-one">
-										<h4>Style Zone</h4>
-										<ul>
-											<li><a href="products.html">Shoes</a></li>
-											<li><a href="products.html">Watches</a></li>
-											<li><a href="products.html">Brands</a></li>
-											<li><a href="products.html">Coats</a></li>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Trousers</a></li>
-										</ul>	
-									</div>
-									<div class="col1 me-one">
-										<h4>Popular Brands</h4>
-										<ul>
-											<li><a href="products.html">499 Store</a></li>
-											<li><a href="products.html">Fastrack</a></li>
-											<li><a href="products.html">Casio</a></li>
-											<li><a href="products.html">Fossil</a></li>
-											<li><a href="products.html">Maxima</a></li>
-											<li><a href="products.html">Timex</a></li>
-											<li><a href="products.html">TomTom</a></li>
-											<li><a href="products.html">Titan</a></li>
-										</ul>	
+							</li>
+							<li class="grid"><a href="#">Women</a>
+								<div class="mepanel">
+									<div class="row">
+										<div class="col1 me-one">
+											<h4>Shop</h4>
+											<ul>
+												<li><a href="products.html">New Arrivals</a></li>
+												<li><a href="products.html">Blazers</a></li>
+												<li><a href="products.html">Swem Wear</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Handbags</a></li>
+												<li><a href="products.html">T-Shirts</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">My Shopping Bag</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Style Zone</h4>
+											<ul>
+												<li><a href="products.html">Shoes</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">Brands</a></li>
+												<li><a href="products.html">Coats</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Trousers</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Popular Brands</h4>
+											<ul>
+												<li><a href="products.html">499 Store</a></li>
+												<li><a href="products.html">Fastrack</a></li>
+												<li><a href="products.html">Casio</a></li>
+												<li><a href="products.html">Fossil</a></li>
+												<li><a href="products.html">Maxima</a></li>
+												<li><a href="products.html">Timex</a></li>
+												<li><a href="products.html">TomTom</a></li>
+												<li><a href="products.html">Titan</a></li>
+											</ul>
+										</div>
 									</div>
 								</div>
-							</div>
-						</li>
-						<li class="grid"><a href="typo.html">Blog</a>
-						</li>
-						<li class="grid"><a href="contact.html">Contact</a>
-						</li>
-					</ul>
+							</li>
+							<li class="grid"><a href="#">Kids</a>
+								<div class="mepanel">
+									<div class="row">
+										<div class="col1 me-one">
+											<h4>Shop</h4>
+											<ul>
+												<li><a href="products.html">New Arrivals</a></li>
+												<li><a href="products.html">Blazers</a></li>
+												<li><a href="products.html">Swem Wear</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Handbags</a></li>
+												<li><a href="products.html">T-Shirts</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">My Shopping Bag</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Style Zone</h4>
+											<ul>
+												<li><a href="products.html">Shoes</a></li>
+												<li><a href="products.html">Watches</a></li>
+												<li><a href="products.html">Brands</a></li>
+												<li><a href="products.html">Coats</a></li>
+												<li><a href="products.html">Accessories</a></li>
+												<li><a href="products.html">Trousers</a></li>
+											</ul>
+										</div>
+										<div class="col1 me-one">
+											<h4>Popular Brands</h4>
+											<ul>
+												<li><a href="products.html">499 Store</a></li>
+												<li><a href="products.html">Fastrack</a></li>
+												<li><a href="products.html">Casio</a></li>
+												<li><a href="products.html">Fossil</a></li>
+												<li><a href="products.html">Maxima</a></li>
+												<li><a href="products.html">Timex</a></li>
+												<li><a href="products.html">TomTom</a></li>
+												<li><a href="products.html">Titan</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="grid"><a href="typo.html">Blog</a>
+							</li>
+							<li class="grid"><a href="contact.html">Contact</a>
+							</li>
+						</ul>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-3 header-right">
+					<div class="search-bar">
+						<input type="text" value="Search" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Search';}">
+						<input type="submit" value="">
+					</div>
 				</div>
 				<div class="clearfix"> </div>
-			</div>
-			<div class="col-md-3 header-right"> 
-				<div class="search-bar">
-					<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-					<input type="submit" value="">
-				</div>
-			</div>
-			<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
@@ -267,247 +477,752 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="single contact">
 		<div class="container">
 			<div class="single-main">
-				<div class="col-md-9 single-main-left">
-				<div class="sngl-top">
-					<div class="col-md-5 single-top-left">	
-						<div class="flexslider">
-							  <ul class="slides">
-								<li data-thumb="images/s-1.jpg">
-									<div class="thumb-image"> <img src="images/s-1.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
-								</li>
-								<li data-thumb="images/s-2.jpg">
-									 <div class="thumb-image"> <img src="images/s-2.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
-								</li>
-								<li data-thumb="images/s-3.jpg">
-								   <div class="thumb-image"> <img src="images/s-3.jpg" data-imagezoom="true" class="img-responsive" alt=""/> </div>
-								</li> 
-							  </ul>
-						</div>
-						<!-- FlexSlider -->
-						<script src="js/imagezoom.js"></script>
-						<script defer src="js/jquery.flexslider.js"></script>
-						<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+				<div class="col-md-9 single-main-left otam">
+					<div class="sngl-top">
+						<div class="col-md-5 single-top-left">
+							<div class="flexslider">
+								<ul class="slides">
+									<li data-thumb="images/LTP-1274D-7BDF.jpg">
+										<div class="thumb-image"> <img src="images/LTP-1274D-7BDF.jpg" data-imagezoom="true"
+												class="img-responsive" alt="" /> </div>
+									</li>
+									<li data-thumb="images/219_LTP-1274D-7BDF-699x699.jpg">
+										<div class="thumb-image"> <img src="images/219_LTP-1274D-7BDF-699x699.jpg" data-imagezoom="true"
+												class="img-responsive" alt="" /> </div>
+									</li>
+									<li data-thumb="images/casio-box-699x699.jpg">
+										<div class="thumb-image"> <img src="images/casio-box-699x699.jpg" data-imagezoom="true"
+												class="img-responsive" alt="" /> </div>
+									</li>
+								</ul>
+							</div>
+							<!-- FlexSlider -->
+							<script src="js/imagezoom.js"></script>
+							<script defer src="js/jquery.flexslider.js"></script>
+							<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
-						<script>
-						// Can also be used with $(document).ready()
-						$(window).load(function() {
-						  $('.flexslider').flexslider({
-							animation: "slide",
-							controlNav: "thumbnails"
-						  });
-						});
-						</script>
-					</div>	
-					<div class="col-md-7 single-top-right">
-						<div class="single-para simpleCart_shelfItem">
-						<h2>Lorem Ipsum</h2>
-							<div class="star-on">
-								<ul class="star-footer">
+							<script>
+								// Can also be used with $(document).ready()
+								$(window).load(function () {
+									$('.flexslider').flexslider({
+										animation: "slide",
+										controlNav: "thumbnails"
+									});
+								});
+							</script>
+						</div>
+						<div class="col-md-7 single-top-right">
+							<div class="single-para simpleCart_shelfItem">
+								<h2>CASIO LTP-V002D-7AUDF – NỮ – QUARTZ (PIN) – DÂY KIM LOẠI</h2>
+								<div class="star-on">
+									<ul class="star-footer">
 										<li><a href="#"><i> </i></a></li>
 										<li><a href="#"><i> </i></a></li>
 										<li><a href="#"><i> </i></a></li>
 										<li><a href="#"><i> </i></a></li>
 										<li><a href="#"><i> </i></a></li>
 									</ul>
-								<div class="review">
-									<a href="#"> 1 customer review </a>
-									
+									<div class="review">
+										<a href="#"> 1 customer review </a>
+
+									</div>
+									<div class="clearfix"> </div>
 								</div>
-							<div class="clearfix"> </div>
+								
+
+								<p>Mã Số Sản Phẩm: LTP-1274D-7BDF</p></br>
+								<h5 class="item_price" id="giachitiet">1.974.000<u>đ</u></h5>
+								
+								<p>Đồng hồ Casio LTP-1274D-7BDF có kiểu dáng cổ điển khi mặt số tròn, kim chỉ thanh mãnh và vạch số chỉ giờ phủ màu đen nổi bật trên nền số màu trắng trang nhã, dây đeo kim loại thời trang mạ bạc.</p>
+								
+								<div class="available">
+									<a id="khungyoutobe1"><img
+											src="https://donghohaitrieu.com/wp-content/uploads/hai-trieu/icon/reviews.gif"></a>
+									<iframe id="khungyoutobe" width="560" height="315"
+										src="https://www.youtube.com/embed/duxhST2Jm-4" frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen></iframe>
+										<a href="https://www.youtube.com/channel/UCxKzc1W5ELFScwQHXoV5Y7w/search?query=AE-1200WHD-1AVDF&amp;sub_confirmation=1" data-wpel-link="external" rel="nofollow external"><img class="alignnone wp-image-14205 size-full lazyloaded" src="https://donghohaitrieu.com/wp-content/uploads/hai-trieu/icon/hdsd.gif" width="85" height="106" data-ll-status="loaded"><noscript><img class="alignnone wp-image-14205 size-full" src="https://donghohaitrieu.com/wp-content/uploads/hai-trieu/icon/hdsd.gif" width="85" height="106" /></noscript></a>
+								</div>
+
+								<p>Bạn hãy <a id="close3"> NHẬP ĐỊA CHỈ</a> nhận hàng để được dự báo thời gian & chi phí
+									giao hàng một cách chính xác nhất</p>
+								<a href="#" class="add-cart item_add" style="padding-top: 15px;margin-left: 75px;">THÊM
+									VÀO GIỎ HÀNG</a>
+
 							</div>
-							
-							<h5 class="item_price">$ 95.00</h5>
-							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-							<div class="available">
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="tabs">
+						<ul class="menu_drop">
+							<li class="item1"><a href="#"><img src="images/arrow.png" alt="">Mô tả</a>
+								<ul style="background-color: white;  ">
+									<table border="0" width="100%" cellspacing="0" cellpadding="0">
+										<colgroup> </colgroup>
+										<tbody>
+											<tr>
+												<td style="height: 19px; width: 180px; background-color: #efeff1;">
+													<div><strong>Thương Hiệu</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 180px; height: 19px; background-color: #efeff1;">
+													<div>Casio</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Số Hiệu Sản Phẩm</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div><a href="https://donghohaitrieu.com/san-pham/casio-mtp-1302sg-7avdf-nam-quartz-pin-day-kim-loai"
+															target="_blank" rel="noopener noreferrer"
+															data-wpel-link="internal">MTP-1302SG-7AVDF</a> (Nam) – <a
+															href="https://donghohaitrieu.com/san-pham/casio-ltp-1302sg-7avdf-nu-quartz-pin-day-kim-loai"
+															target="_blank" rel="noopener noreferrer"
+															data-wpel-link="internal">LTP-1302SG-7AVDF</a> (Nữ)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Giá</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">1,739,000 (Nam) –
+													1,739,000 (Nữ) VND / Cái</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Xuất Xứ</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div>Nhật Bản</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Kính</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div>Mineral Crystal (Kính Cứng)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Máy</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div>Quartz (Pin)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Bảo Hành Quốc Tế</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div>1 Năm</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Bảo Hành Tại Hải Triều</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Đường Kính Mặt Số</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div>38 mm (Nam) – 32 mm (Nữ)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Bề Dày Mặt Số</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div>9.2 mm (Nam) – 8.7 mm (Nữ)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Niềng</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Dây Đeo</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">&nbsp;</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Màu Mặt Số</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div>Trắng</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><strong>Chống Nước</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div>5 ATM (Nam) – 5 ATM (Nữ)</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div><strong>Chức Năng</strong></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="height: 19px; background-color: #efeff1;">
+													<div>Lịch Ngày</div>
+												</td>
+											</tr>
+											<tr>
+												<td style="height: 19px;" height="19">
+													<div><a href="https://donghohaitrieu.com/tin-tuc/dong-ho/noi-san-xuat-dong-ho-deo-tay-cua-cac-thuong-hieu-noi-tieng.html"
+															target="_blank" rel="noopener noreferrer"
+															data-wpel-link="internal"><strong>Nơi sản xuất (Tùy từng lô
+																hàng)</strong></a></div>
+												</td>
+												<td style="width: 1px;">&nbsp;</td>
+												<td style="width: 519px;">
+													<div>Trung Quốc</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</ul>
+
+							</li>
+							<li class="item2"><a href="#"><img src="images/arrow.png" alt="">Chế độ bảo hành</a>
+								<ul style="background-color: white;">
+									<div id="content_tab_9" class="tab-content"
+										style="display: block;    padding-left: 15px;">
+										<span
+											style="font-size: 14pt; font-family: 'courier new', courier, monospace;">Chế
+											Độ Bảo Hành</span>
+										<strong><span
+												style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tất
+												cả các đồng hồ khi bán ra đều kèm theo 2 phiếu bảo hành:</span></strong>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">1
+													Phiếu Bảo Hành (hoặc Thẻ Bảo Hành/Sổ Bảo Hành) của hãng có giá trị
+													bảo hành Quốc tế (Thời gian bảo hành tùy theo quy định của từng
+													hãng).</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">1
+													Phiếu Bảo Hành của Hải Triều (Sử dụng để được thay pin miễn phí vĩnh
+													viễn &amp; Hưởng chế độ bảo hành tăng thêm từ 1-4 năm của Hải
+													Triều).</span></li>
+										</ul>
+										<span
+											style="font-family: verdana, geneva, sans-serif; font-size: 10pt;"><strong>Ví
+												dụ:</strong> Đồng Hồ Citizen có chế độ bảo hành chính hãng: máy = 12
+											tháng, Pin = 12 tháng.</span>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Khi
+													mua tại Hải Triều, Khách hàng sẽ được tặng thêm thời gian bảo hành
+													từ 4 năm về máy. Pin = Vĩnh Viễn.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tổng
+													cộng: Khi mua tại Hải Triều, đồng hồ Citizen&nbsp;sẽ được bảo hành
+													máy = 05 năm, Pin = Vĩnh Viễn.</span></li>
+										</ul>
+										<strong><span
+												style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Lưu
+												ý:</span></strong>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đối
+													với sản phẩm còn trong thời gian bảo hành Quốc Tế: Quý khách có thể
+													đem tới Hải Triều hoặc bất kỳ nhà trung tâm bảo hành nào của hãng
+													được ghi trên phiếu để yêu cầu được kiểm tra đồng hồ.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đối
+													với sản phẩm hết thời gian bảo hành Quốc Tế nhưng vẫn trong thời
+													gian bảo hành tại Hải Triều: Quý khách đem đồng hồ kèm Phiếu Bảo
+													Hành của Hải Triều tới bất kỳ chi nhánh nào của Hải Triều để được
+													hướng dẫn và kiểm tra đồng hồ.</span></li>
+										</ul>
+										<strong><span
+												style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Điều
+												Kiện Được Bảo Hành</span></strong>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Bảo
+													hành chỉ có giá trị khi đồng hồ có Phiếu bảo hành của hãng &amp;
+													Phiếu bảo hành của Hải Triều đi kèm, điền chính xác, đầy đủ các
+													thông tin.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Phiếu
+													bảo hành phải còn nguyên vẹn, không rách, chấp vá, hoen ố, mờ
+													nhạt.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Còn
+													trong thời gian bảo hành. Thời gian bảo hành được tính từ ngày mua
+													có ghi trên Phiếu Bảo Hành.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Chỉ
+													bảo hành thay thế mới cho những linh kiện, phụ tùng bị hỏng – không
+													thay thế bằng một chiếc đồng hồ khác.</span></li>
+										</ul>
+										<strong><span
+												style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Điều
+												Kiện Không Được Bảo Hành</span></strong>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Đồng
+													hồ không có Phiếu bảo hành của hãng và Phiếu bảo hành của Hải Triều
+													đi kèm.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Các
+													loại dây đeo, khoá, vỏ, màu xi, mặt số, mặt kiếng bị hỏng hóc, vỡ do
+													sử dụng không đúng, tai nạn, lão hóa tự nhiên, va đập, … trong quá
+													trình sử dụng.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Hỏng
+													hóc do hậu quả gián tiếp của việc sử dụng sai hướng dẫn của hãng có
+													kèm theo đồng hồ.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Trầy
+													xước về dây hoặc mặt kiếng bị trầy xước, vỡ do va chạm trong quá
+													trình sử dụng.&nbsp;</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tự
+													ý thay đổi máy móc bên trong, mở ra can thiệp sửa chữa trong thời
+													gian còn bảo hành –&nbsp;Tại những nơi không phải là trung tâm của
+													hãng</span></li>
+										</ul>
+										<strong><span
+												style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Chế
+												Độ Bảo Hành RED GUARANTEE</span></strong>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Tăng
+													thêm 1-2 năm bảo hành tại Hải Triều ngoài chế độ bảo hành Quốc Tế
+													của hãng để có tổng thời gian là 4 năm.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Ưu
+													tiên bảo hành – Đồng hồ sẽ được xếp vào danh sách ưu tiên bảo hành
+													để nhanh chóng quay lại với Quý khách.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Giao
+													nhận đồng hồ bảo hành ngay tại nhà Quý khách.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Cập
+													nhật tình trạng đồng hồ qua điện thoại tới Quý khách. Quý khách được
+													tư vấn, cập nhật tình trạng đồng hồ trong quá trình đồng hồ được bảo
+													hành.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">4
+													năm đánh bóng đồng hồ miễn phí.</span></li>
+										</ul>
+										<span
+											style="font-family: 'courier new', courier, monospace; font-size: 14pt;">Chính
+											Sách Đổi Hàng</span>
+										<span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Trong
+											vòng 7 ngày kể từ ngày mua hàng từ Đồng Hồ Hải Triều, Quý khách có thể yêu
+											cầu đổi hàng hoàn toàn miễn phí. Thời hạn 7 ngày được tính theo dấu bưu
+											điện khi Quý khách gửi sản phẩm về cho chúng tôi hoặc thời gian chúng
+											tôi tiếp nhận yêu cầu trực tiếp (tại cửa hàng) của Quý khách.</span>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Yêu
+													cầu đổi hàng cần được thực hiện trong vòng 7 ngày kể từ ngày Quý
+													khách nhận được hàng.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Sản
+													phẩm không có dấu hiệu đã qua sử dụng (còn đầy đủ keo dán bảo vệ
+													chống trầy xước mặt đồng hồ, nắp đáy, dây..)</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Sản
+													phẩm không bị dây bẩn, trầy xước, hư hỏng, dính hoá chất hoặc có
+													dấu hiệu cạy mở.</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Các
+													bộ phận, linh kiện, phụ kiện, tài liệu hướng dẫn sử dụng, tài liệu
+													kỹ thuật, quà tặng kèm theo (nếu có), …&nbsp;</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Hộp
+													đựng, bao bì đóng gói sản phẩm còn nguyên vẹn, không bị móp, rách,
+													ố vàng, …</span></li>
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">C</span><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">hỉ
+													chấp nhận đổi 1 lần duy nhất tính từ ngày mua sản phẩm.</span></li>
+										</ul>
+										<span
+											style="font-family: 'courier new', courier, monospace; font-size: 14pt;">Hướng
+											Dẫn Mua Hàng</span>
+										<span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Do đặc
+											thù mặt hàng đồng hồ cao cấp nên chúng tôi khuyến khích Quý khách tới tham
+											quan và mua sắm tại hệ thống đại lý cửa hàng của Đồng Hồ Hải Triều.</span>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;"><a
+														href="https://donghohaitrieu.com/lien-he"
+														data-wpel-link="internal"><b>Hệ Thống Chi Nhánh</b></a></span>
+											</li>
+										</ul>
+										<span style="font-family: verdana, geneva, sans-serif; font-size: 10pt;">Trường
+											hợp quý khách ở xa (khu vực không có hệ thống cửa hàng của Hải Triều), không
+											có thời gian tới cửa hàng, hay theo yêu cầu của quý khách - Để đảm bảo sự
+											thuận tiện nhất cho quá trình mua hàng của Quý khách, Đồng Hồ Hải Triều sẽ
+											áp dụng hình thức giao hàng và thu tiền tận nhà (COD) (Quý khách chỉ phải
+											trả tiền khi nhận được hàng)</span>
+										<ul style="list-style-type: square;">
+											<li><span
+													style="font-family: verdana, geneva, sans-serif; font-size: 10pt;"><strong>Gọi
+														Ngay:</strong> <a href="tel:19006777"
+														data-wpel-link="internal">1900.6777</a></span></li>
+										</ul>
+									</div>
+								</ul>
+							</li>
+							<li class="item3"><a href="#"><img src="images/arrow.png" alt="">Hướng dẫn sử dụng</a>
 								<ul>
-									<li>Color
-										<select>
-										<option>Silver</option>
-										<option>Black</option>
-										<option>Dark Black</option>
-										<option>Red</option>
-									</select></li>
-								<li class="size-in">Size<select>
-									<option>Large</option>
-									<option>Medium</option>
-									<option>small</option>
-									<option>Large</option>
-									<option>small</option>
-								</select></li>
-								<div class="clearfix"> </div>
-							</ul>
-						</div>
-							<ul class="tag-men">
-								<li><span>TAG</span>
-								<span class="women1">: Women,</span></li>
-								<li><span>SKU</span>
-								<span class="women1">: CK09</span></li>
-							</ul>
-								<a href="#" class="add-cart item_add">ADD TO CART</a>
-							
+									<p style="text-align: center;"><iframe width="400" height="225"
+											src="https://www.youtube.com/embed/Hnenxz5SZJQ" frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen=""></iframe></p>
+								</ul>
+							</li>
+							<li class="item4"><a href="#"><img src="images/arrow.png" alt="">Helpful Links</a>
+								<ul>
+									<li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
+											vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+											facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+											praesent luptatum zzril delenit augue duis dolore</a></li>
+									<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
+											putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
+											quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+											parum clari, fiant sollemnes </a></li>
+								</ul>
+							</li>
+							<li class="item5"><a href="#"><img src="images/arrow.png" alt="">Make A Gift</a>
+								<ul>
+									<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing
+											elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+											aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+											tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+											consequat.</a></li>
+									<li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in
+											vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+											facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+											praesent luptatum zzril delenit augue duis dolore</a></li>
+									<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc
+											putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
+											quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur
+											parum clari, fiant sollemnes </a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="latestproducts">
+						<div class="product-one">
+							<div class="col-md-3 product-left sanphamchitiet">
+								<div class="product-main simpleCart_shelfItem">
+									<a href="single.html" class="mask"><img class="img-responsive zoom-img"
+											src="images/LTP-V005D-4B2UDF.jpg" alt="" /></a>
+									<div class="product-bottom">
+										<div class="ten">
+											<h3>Casio LTP-V005D-4B2UDF – Nữ – Quartz (Pin) – Dây Kim Loại</h3>
+										</div>
+										<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
+												class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										</h4>
+		
+									</div>
+									<div class="srch">
+										<span>-50%</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-left sanphamchitiet">
+								<div class="product-main simpleCart_shelfItem ">
+									<a href="single.html" class="mask"><img class="img-responsive zoom-img"
+											src="images/LTP-1302L-7BVDF-1-399x399.jpg" alt="" /></a>
+									<div class="product-bottom">
+										<div class="ten">
+											<h3>Casio LTP-V005D-4B2UDF – Nữ – Quartz (Pin) – Dây Kim Loại</h3>
+										</div>
+										<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
+												class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										</h4>
+		
+									</div>
+									<div class="srch">
+										<span>-50%</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-3 product-left sanphamchitiet">
+								<div class="product-main simpleCart_shelfItem">
+									<a href="single.html" class="mask"><img class="img-responsive zoom-img"
+											src="images/36_LTP-1230D-7CDF-2.jpg" alt="" /></a>
+									<div class="product-bottom">
+										<div class="ten">
+											<h3>Casio LTP-1230D-7CDF – Nữ – Quartz (Pin) – Dây Kim Loại</h3>
+										</div>
+										<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
+												class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										</h4>
+		
+									</div>
+									<div class="srch">
+										<span>-50%</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
 						</div>
 					</div>
-					<div class="clearfix"> </div>
 				</div>
-				<div class="tabs">
-					<ul class="menu_drop">
-				<li class="item1"><a href="#"><img src="images/arrow.png" alt="">Description</a>
-					<ul>
-						<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-						<li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-						<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-					</ul>
-				</li>
-				<li class="item2"><a href="#"><img src="images/arrow.png" alt="">Additional information</a>
-					<ul>
-					    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-						<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-					</ul>
-				</li>
-				<li class="item3"><a href="#"><img src="images/arrow.png" alt="">Reviews (10)</a>
-					<ul>
-						<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-						<li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-						<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-					</ul>
-				</li>
-				<li class="item4"><a href="#"><img src="images/arrow.png" alt="">Helpful Links</a>
-					<ul>
-					    <li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-						<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-					</ul>
-				</li>
-				<li class="item5"><a href="#"><img src="images/arrow.png" alt="">Make A Gift</a>
-					<ul>
-						<li class="subitem1"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></li>
-						<li class="subitem2"><a href="#"> Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore</a></li>
-						<li class="subitem3"><a href="#">Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes </a></li>
-					</ul>
-				</li>
-	 		</ul>
-				</div>
-				<div class="latestproducts">
-					<div class="product-one">
-						<div class="col-md-4 product-left p-left"> 
-							<div class="product-main simpleCart_shelfItem">
-								<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-1.png" alt="" /></a>
-								<div class="product-bottom">
-									<h3>Smart Watches</h3>
-									<p>Explore Now</p>
-									<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-								</div>
-								<div class="srch">
-									<span>-50%</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-left p-left"> 
-							<div class="product-main simpleCart_shelfItem">
-								<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-2.png" alt="" /></a>
-								<div class="product-bottom">
-									<h3>Smart Watches</h3>
-									<p>Explore Now</p>
-									<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-								</div>
-								<div class="srch">
-									<span>-50%</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-4 product-left p-left"> 
-							<div class="product-main simpleCart_shelfItem">
-								<a href="single.html" class="mask"><img class="img-responsive zoom-img" src="images/p-3.png" alt="" /></a>
-								<div class="product-bottom">
-									<h3>Smart Watches</h3>
-									<p>Explore Now</p>
-									<h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">$ 329</span></h4>
-								</div>
-								<div class="srch">
-									<span>-50%</span>
-								</div>
-							</div>
-						</div>
-						<div class="clearfix"></div>
-					</div>
-				</div>
-			</div>
+
 				<div class="col-md-3 single-right">
 					<div class="w_sidebar">
-						<section  class="sky-form">
-							<h4>Catogories</h4>
-							<div class="row1 scroll-pane">
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>All Accessories</label>
-								</div>
-								<div class="col col-4">								
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Women Watches</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Kids Watches</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Men Watches</label>			
+						<div class="product-brandsss" style="border: 1px #D6D6D6 solid;height: 172px;text-align: center;font-size: 15px;>
+
+							<h4 class="titletle"><span>Thương Hiệu</span></h4>
+							
+							<a href="https://donghohaitrieu.com/brand/tissot" data-wpel-link="internal">
+								<img style="width: 255px;margin-bottom: 47px;margin-top: 16px;"
+									src="https://cdn3.dhht.vn/wp-content/uploads/2017/10/Tissot-Logo.png" title="Tissot"
+									alt="Tissot" class="brand-image lazyloaded" data-ll-status="loaded"><noscript><img
+										src="https://cdn3.dhht.vn/wp-content/uploads/2017/10/Tissot-Logo.png"
+										title="Tissot" alt="Tissot" class="brand-image" /></noscript>
+							</a>
+						</div>
+						<div id="custom_html-8" class="widget_text sidebar-widget widget_custom_html">
+							<h4 class="widget-title">Tại Sao Nên Chọn Chúng Tôi?</h4>
+							<div class="textwidget custom-html-widget">
+								<div class="ohmygod">
+									<p><i class="fas fa-star" style="    font-size: 25px;
+										margin-top: 5px;
+										float: left;
+										margin-right: 20px;color:#ff6600 ;"></i><noscript><img class="alignnone size-full wp-image-575"
+												style="float: left;"
+												src="https://cdn3.dhht.vn/wp-content/uploads/2015/09/chung-nhan1.png"
+												alt="chung-nhan" /></noscript><span style="line-height: 1.6em;">Hoàn Lại
+											Tiền &nbsp;Nếu Phát Hiện Hàng Giả - Hàng Nhái.</span></p>
+									<div class="bao-hanh-5-na">
+										<p><i class="fas fa-star" style="    font-size: 25px;
+											margin-top: 0px;
+											float: left;
+											margin-right: 20px;color:#ff6600 ;"></i>
+											<noscript><img class="alignnone size-full wp-image-576" style="float: left;"
+													src="https://cdn3.dhht.vn/wp-content/uploads/2015/09/bao-hanh-5-nam1.png"
+													alt="bao-hanh-5-nam" /></noscript>Tăng Thêm Thời Gian Bảo Hành Lên
+											Đến 5 Năm - </p>
+									</div>
+									<p>
+									<div class="bao-hanh-5-na">
+										<p style="margin-top: -19px;">
+											<i class="fas fa-star" style="    font-size: 25px;
+											margin-top: 0px;
+											float: left;
+											margin-right: 20px;color:#ff6600 ;"></i></noscript>Sai Kích Cỡ? Không Ưng Ý? Đổi Hàng&nbsp;Trong 7 Ngày
+											- </p>
+										<p><i class="fas fa-star" style="    font-size: 25px;
+											margin-top: 0px;
+											float: left;
+											margin-right: 20px;color:#ff6600 ;"></i><noscript><img style="float: left;"
+													src="https://cdn3.dhht.vn/wp-content/uploads/2015/09/thay-pin-mien-phi1.png"
+													alt="" /></noscript>Thay Pin<span class="bao-hanh-5-na"> Miễn Phí
+												Suốt
+												Đời</span> - Không Còn Lo Hết Pin Nữa.</p>
+										<p><i class="fas fa-star" style="    font-size: 25px;
+											margin-top: 5px;
+											float: left;
+											margin-right: 20px;color:#ff6600 ;"></i></noscript>Nhận Hàng &amp; Trả Tiền - Ngay Tại Nhà Bạn.
+											Hoàn
+											Toàn Miễn Phí.</p>
+										<p><i class="fas fa-star" style="    font-size: 25px;
+											margin-top: 5px;
+											float: left;
+											margin-right: 20px;color:#ff6600 ;"></i></noscript>Đến &amp; Cảm Nhận&nbsp;Kinh Nghiệm Hơn 25 Năm
+											Của
+											Chúng Tôi.</p>
+
+										<div id="etheme-recent-posts-2" style="margin-top: 53px;"
+											class="sidebar-widget etheme_widget_recent_entries">
+											<h4 class="widget-title">Bài Viết Mới</h4>
+											<div class="recent-post-mini" style="margin-bottom: 30px; ">
+												<a class="postimg"
+													href="https://donghohaitrieu.com/tin-tuc/dong-ho/huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha.html"
+													title="Hướng dẫn cách đo size khóa đồng hồ dây da đơn giản tại nhà"
+													data-wpel-link="internal"><img class="lazyloaded"
+														src="https://cdn3.dhht.vn/wp-content/uploads/2020/11/Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha-70x70.jpg"
+														width="70" height="70"
+														alt="Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha"
+														title="Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha"
+														data-ll-status="loaded"><noscript><img class=""
+															src="https://cdn3.dhht.vn/wp-content/uploads/2020/11/Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha-70x70.jpg"
+															width="70" height="70"
+															alt="Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha"
+															title="Huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha" /></noscript></a>
+												<a href="https://donghohaitrieu.com/tin-tuc/dong-ho/huong-dan-cach-do-size-khoa-dong-ho-day-da-don-gian-tai-nha.html"
+													title="Hướng dẫn cách đo size khóa đồng hồ dây da đơn giản tại nhà"
+													data-wpel-link="internal">
+													Hướng dẫn cách đo size khóa đồng hồ dây da ...
+												</a><br>
+												by <strong>Luxury Watch</strong><br>
+												 <div class="clear"></div>
+											</div>
+											<div class="recent-post-mini" style="margin-bottom: 30px;">
+												<a class="postimg"
+													href="https://donghohaitrieu.com/tin-tuc/hai-trieu/thang-11-giam-gia-30-day-da-zrc-condor-giam-them-20-khi-mua-dong-ho.html"
+													title="Tháng 11: Giảm giá 30% dây da ZRC &amp; Condor – Giảm thêm 20% khi mua đồng hồ"
+													data-wpel-link="internal"><img class="lazyloaded"
+														src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/chuong-trinh-giam-gia-day-da-dong-ho-condor-va-zrc-70x70.png"
+														width="70" height="70"
+														alt="chuong trinh giam gia day da dong ho condor va zrc"
+														title="chuong trinh giam gia day da dong ho condor va zrc"
+														data-ll-status="loaded"><noscript><img class=""
+															src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/chuong-trinh-giam-gia-day-da-dong-ho-condor-va-zrc-70x70.png"
+															width="70" height="70"
+															alt="chuong trinh giam gia day da dong ho condor va zrc"
+															title="chuong trinh giam gia day da dong ho condor va zrc" /></noscript></a>
+												<a href="https://donghohaitrieu.com/tin-tuc/hai-trieu/thang-11-giam-gia-30-day-da-zrc-condor-giam-them-20-khi-mua-dong-ho.html"
+													title="Tháng 11: Giảm giá 30% dây da ZRC &amp; Condor – Giảm thêm 20% khi mua đồng hồ"
+													data-wpel-link="internal">
+													Tháng 11: Giảm giá 30% dây da ZRC &amp; Condor ...
+												</a><br>
+												by <strong>Luxury Watch</strong><br>
+												 <div class="clear"></div>
+											</div>
+											<div class="recent-post-mini" >
+												<a class="postimg"
+													href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-dong-ho-citizen-eco-drive-ban-chay-nhat-combo-6-mon-qua.html"
+													title="15 đồng hồ Citizen Eco-Drive bán chạy nhất + Combo 6 món quà"
+													data-wpel-link="internal"><img class="lazyloaded"
+														src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/15-dong-ho-citizen-eco-drive-ban-chay-nhat-combo-6-mon-qua-70x70.jpg"
+														width="70" height="70"
+														alt="15 dong ho citizen eco drive ban chay nhat combo 6 mon qua"
+														title="15 dong ho citizen eco drive ban chay nhat combo 6 mon qua"
+														data-ll-status="loaded"><noscript><img class=""
+															src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/15-dong-ho-citizen-eco-drive-ban-chay-nhat-combo-6-mon-qua-70x70.jpg"
+															width="70" height="70"
+															alt="15 dong ho citizen eco drive ban chay nhat combo 6 mon qua"
+															title="15 dong ho citizen eco drive ban chay nhat combo 6 mon qua" /></noscript></a>
+												<a href="https://donghohaitrieu.com/tin-tuc/dong-ho/15-dong-ho-citizen-eco-drive-ban-chay-nhat-combo-6-mon-qua.html"
+													title="15 đồng hồ Citizen Eco-Drive bán chạy nhất + Combo 6 món quà"
+													data-wpel-link="internal">
+													15 đồng hồ Citizen Eco-Drive bán chạy nhất + Combo ...
+												</a><br>
+												by <strong>Luxury Watch</strong><br>
+												 <div class="clear"></div>
+											</div>
+											<div class="recent-post-mini">
+												<a class="postimg"
+													href="https://donghohaitrieu.com/tin-tuc/hai-trieu/kham-pha-showroom-dong-ho-hai-trieu-quan-8-truoc-them-khai-truong.html"
+													title="Khám phá showroom Đồng Hồ Hải Triều Quận 8 trước thềm khai trương"
+													data-wpel-link="internal"><img class="lazyloaded"
+														src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/kham-pha-showroom-dong-ho-hai-trieu-quan-8-truoc-them-khai-truong-banner-70x70.jpg"
+														width="70" height="70"
+														alt="kham pha showroom dong ho hai trieu quan 8 truoc them khai truong"
+														title="kham pha showroom dong ho hai trieu quan 8 truoc them khai truong"
+														data-ll-status="loaded"><noscript><img class=""
+															src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/kham-pha-showroom-dong-ho-hai-trieu-quan-8-truoc-them-khai-truong-banner-70x70.jpg"
+															width="70" height="70"
+															alt="kham pha showroom dong ho hai trieu quan 8 truoc them khai truong"
+															title="kham pha showroom dong ho hai trieu quan 8 truoc them khai truong" /></noscript></a>
+												<a href="https://donghohaitrieu.com/tin-tuc/hai-trieu/kham-pha-showroom-dong-ho-hai-trieu-quan-8-truoc-them-khai-truong.html"
+													title="Khám phá showroom Đồng Hồ Hải Triều Quận 8 trước thềm khai trương"
+													data-wpel-link="internal">
+													Khám phá showroom Đồng Hồ Hải Triều Quận 8 trước ...
+												</a><br>
+												by <strong>Luxury Watch</strong><br>
+												 <div class="clear"></div>
+											</div>
+											<div class="recent-post-mini">
+												<a class="postimg"
+													href="https://donghohaitrieu.com/tin-tuc/hai-trieu/thang-11-khuyen-mai-combo-6-mon-qua-khi-mua-dong-ho-citizen-eco-drive.html"
+													title="Tháng 11: Khuyến mãi Combo 6 món quà khi mua đồng hồ Citizen Eco-Drive"
+													data-wpel-link="internal"><img class="lazyloaded"
+														src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/thang-11-khuyen-mai-combo-6-mon-qua-khi-mua-dong-ho-citizen-eco-drive-70x70.jpg"
+														width="70" height="70"
+														alt="thang 11 khuyen mai combo 6 mon qua khi mua dong ho citizen eco drive"
+														title="thang 11 khuyen mai combo 6 mon qua khi mua dong ho citizen eco drive"
+														data-ll-status="loaded"><noscript><img class=""
+															src="https://cdn3.dhht.vn/wp-content/uploads/2020/10/thang-11-khuyen-mai-combo-6-mon-qua-khi-mua-dong-ho-citizen-eco-drive-70x70.jpg"
+															width="70" height="70"
+															alt="thang 11 khuyen mai combo 6 mon qua khi mua dong ho citizen eco drive"
+															title="thang 11 khuyen mai combo 6 mon qua khi mua dong ho citizen eco drive" /></noscript></a>
+												<a href="https://donghohaitrieu.com/tin-tuc/hai-trieu/thang-11-khuyen-mai-combo-6-mon-qua-khi-mua-dong-ho-citizen-eco-drive.html"
+													title="Tháng 11: Khuyến mãi Combo 6 món quà khi mua đồng hồ Citizen Eco-Drive"
+													data-wpel-link="internal">
+													Tháng 11: Khuyến mãi Combo 6 món quà khi mua ...
+												</a><br>
+												by <strong>Luxury Watch</strong><br>
+												 <div class="clear"></div>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</section>
-						<section  class="sky-form">
-							<h4>Brand</h4>
-							<div class="row1 row2 scroll-pane">
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i></i>kurtas</label>
-								</div>
-								<div class="col col-4">
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sonata</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Titan</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Casio</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Omax</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox" ><i></i>shree</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fastrack</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Sports</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Fossil</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Maxima</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Yepme</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Citizen</label>
-									<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Diesel</label>			
-								</div>
-							</div>
-						</section>
-						<section class="sky-form">
-							<h4>Colour</h4>
-								<ul class="w_nav2">
-									<li><a class="color1" href="#"></a></li>
-									<li><a class="color2" href="#"></a></li>
-									<li><a class="color3" href="#"></a></li>
-									<li><a class="color4" href="#"></a></li>
-									<li><a class="color5" href="#"></a></li>
-									<li><a class="color6" href="#"></a></li>
-									<li><a class="color7" href="#"></a></li>
-									<li><a class="color8" href="#"></a></li>
-									<li><a class="color9" href="#"></a></li>
-									<li><a class="color10" href="#"></a></li>
-									<li><a class="color12" href="#"></a></li>
-									<li><a class="color13" href="#"></a></li>
-									<li><a class="color14" href="#"></a></li>
-									<li><a class="color15" href="#"></a></li>
-									<li><a class="color5" href="#"></a></li>
-									<li><a class="color6" href="#"></a></li>
-									<li><a class="color7" href="#"></a></li>
-									<li><a class="color8" href="#"></a></li>
-									<li><a class="color9" href="#"></a></li>
-									<li><a class="color10" href="#"></a></li>
-								</ul>
-						</section>
-						<section class="sky-form">
-							<h4>discount</h4>
-							<div class="row1 row2 scroll-pane">
-								<div class="col col-4">
-									<label class="radio"><input type="radio" name="radio" checked=""><i></i>60 % and above</label>
-									<label class="radio"><input type="radio" name="radio"><i></i>50 % and above</label>
-									<label class="radio"><input type="radio" name="radio"><i></i>40 % and above</label>
-								</div>
-								<div class="col col-4">
-									<label class="radio"><input type="radio" name="radio"><i></i>30 % and above</label>
-									<label class="radio"><input type="radio" name="radio"><i></i>20 % and above</label>
-									<label class="radio"><input type="radio" name="radio"><i></i>10 % and above</label>
-								</div>
-							</div>						
-						</section>
+
+
+							<style type="text/css">
+								.ohmygod p {
+									margin-bottom: 15px;
+									display: inline-block;
+								}
+
+								.ohmygod-mobile p {
+									margin-bottom: 15px;
+									display: inline-block;
+								}
+
+								.ohmygod-mobile {
+									display: none;
+								}
+
+								@media (max-width: 767px) {
+									.ohmygod-mobile p {
+										margin-bottom: 5px;
+										display: inline-block;
+									}
+
+									.ohmygod-mobile img {
+										width: 36px;
+									}
+
+									.ohmygod-mobile {
+										margin-bottom: 20px;
+										display: inline-block;
+									}
+
+									#custom_html-8 .widget-title {
+										padding: 10px 0;
+									}
+
+									.ohmygod {
+										display: none;
+									}
+								}
+							</style>
+						</div>
 					</div>
 				</div>
 				<div class="clearfix"> </div>
@@ -516,67 +1231,102 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<!--end-single-->
 	<!--information-starts-->
-	<div class="information">
+
+	<div class="footer">
 		<div class="container">
 			<div class="infor-top">
-				<div class="col-md-3 infor-left">
+				<div class="col-md-3 infor-left" style=" width: 695px;">
+
+
 					<h3>Follow Us</h3>
 					<ul>
-						<li><a href="#"><span class="fb"></span><h6>Facebook</h6></a></li>
-						<li><a href="#"><span class="twit"></span><h6>Twitter</h6></a></li>
-						<li><a href="#"><span class="google"></span><h6>Google+</h6></a></li>
+						<li><a href="#"><span class="fb"></span>
+								<h6>Facebook</h6>
+							</a></li>
+						<li><a href="#"><span class="twit"></span>
+								<h6>Twitter</h6>
+							</a></li>
+						<li><a href="#"><span class="google"></span>
+								<h6>Google+</h6>
+							</a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 infor-left">
 					<h3>Information</h3>
 					<ul>
-						<li><a href="#"><p>Specials</p></a></li>
-						<li><a href="#"><p>New Products</p></a></li>
-						<li><a href="#"><p>Our Stores</p></a></li>
-						<li><a href="contact.html"><p>Contact Us</p></a></li>
-						<li><a href="#"><p>Top Sellers</p></a></li>
+						<li><a href="#">
+								<p>Specials</p>
+							</a></li>
+						<li><a href="#">
+								<p>New Products</p>
+							</a></li>
+						<li><a href="#">
+								<p>Our Stores</p>
+							</a></li>
+						<li><a href="contact.html">
+								<p>Contact Us</p>
+							</a></li>
+						<li><a href="#">
+								<p>Top Sellers</p>
+							</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 infor-left">
-					<h3>My Account</h3>
-					<ul>
-						<li><a href="account.html"><p>My Account</p></a></li>
-						<li><a href="#"><p>My Credit slips</p></a></li>
-						<li><a href="#"><p>My Merchandise returns</p></a></li>
-						<li><a href="#"><p>My Personal info</p></a></li>
-						<li><a href="#"><p>My Addresses</p></a></li>
+				<div class="col-md-3 infor-left" style=" margin-left: 100px;  margin-top: -179px;">
+					<h3 style="margin-left: 78px;">My Account</h3>
+					<ul style=" margin-left: 100px;">
+						<li><a href="account.html">
+								<p>My Account</p>
+							</a></li>
+						<li><a href="#">
+								<p>My Credit slips</p>
+							</a></li>
+						<li><a href="#">
+								<p>My Merchandise returns</p>
+							</a></li>
+						<li><a href="#">
+								<p>My Personal info</p>
+							</a></li>
+						<li><a href="#">
+								<p>My Addresses</p>
+							</a></li>
 					</ul>
 				</div>
-				<div class="col-md-3 infor-left">
+				<div class="col-md-3 infor-left" style=" margin-top: -178px;">
 					<h3>Store Information</h3>
 					<h4>The company name,
 						<span>Lorem ipsum dolor,</span>
 						Glasglow Dr 40 Fe 72.</h4>
-					<h5>+955 123 4567</h5>	
+					<h5>+955 123 4567</h5>
 					<p><a href="mailto:example@email.com">contact@example.com</a></p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
-	<!--information-end-->
-	<!--footer-starts-->
-	<div class="footer">
 		<div class="container">
 			<div class="footer-top">
 				<div class="col-md-6 footer-left">
 					<form>
-						<input type="text" value="Enter Your Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+						<input type="text" value="Enter Your Email" onfocus="this.value = '';"
+							onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
 						<input type="submit" value="Subscribe">
 					</form>
 				</div>
-				<div class="col-md-6 footer-right">					
-					<p>© 2015 Luxury Watches. All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+				<div class="col-md-6 footer-right">
+					<p>© 2015 Luxury Watches. All Rights Reserved | Design by <a href="http://w3layouts.com/"
+							target="_blank">W3layouts</a> </p>
 				</div>
 				<div class="clearfix"></div>
 			</div>
 		</div>
-	</div>
-	<!--footer-end-->	
+	</div>F
+	<!--footer-end-->
+
+
+
+
+
+
+
 </body>
+
 </html>
