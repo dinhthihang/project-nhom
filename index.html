@@ -8,6 +8,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 	<title>Luxury Watches A Ecommerce Category Flat Bootstrap Resposive Website Template | Home :: w3layouts</title>
 	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 	<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
@@ -15,6 +17,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--Custom-Theme-files-->
 	<!--theme-style-->
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	<script type="text/javascript" src="login.js"></script>
+	<link rel="stylesheet" href="login.css">
 	<!--//theme-style-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -33,7 +37,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 <body>
 	<!--top-header-->
-	<div class="top-header">
+    <div class="top-header">
 		<div class="container">
 			<div class="top-header-main">
 				<div class="col-md-6 top-header-left">
@@ -57,17 +61,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="box2">
 							<a>ĐĂNG NHẬP</a>
 							<ul id="kkk">
-								<li class="menu-tiki1"><a>Đăng nhập</a></li>
-								<li class="menu-tiki2"><a>Tạo tài khoản</a></li>
+								<li class="menu-tiki1"><a id="dangnhapdechon">Đăng nhập</a></li>
+								<li class="menu-tiki2"><a id="close1" style="color: black;">Tạo tài khoản</a></li>
 								<li class="menu-tiki3"><a>Đăng nhập bằng Facebook</a></li>
 								<li class="menu-tiki4"><a>Đăng nhập bằng Google</a></li>
 								<li class="menu-tiki5"><a>Đăng nhập băng Zalo</a></li>
-								
+
 							</ul>
 						</div>
 						<div class="clearfix"></div>
 					</div>
-					
+
 				</div>
 				<div class="col-md-6 top-header-left">
 					<div class="cart box_1">
@@ -111,82 +115,87 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<li><a href="nam-seiko.html">Đồng Hồ Seiko</a></li>
 												<li><a href="nam-citizen.html">Đồng hồ Citizen</a></li>
 												<li><a href="nam-dw.html">Đồng Hồ Daniel Wellington</a></li>
-<!--												<li><a href="men-shop-t-shirts.html">T-Shirts</a></li>-->
-<!--												<li><a href="men-shop-watches.html">Watches</a></li>-->
-<!--												<li><a href="men-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
+												<!--												<li><a href="men-shop-t-shirts.html">T-Shirts</a></li>-->
+												<!--												<li><a href="men-shop-watches.html">Watches</a></li>-->
+												<!--												<li><a href="men-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
 											</ul>
-										</div>
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Style Zone</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="men-style-zone-shoes.html">Shoes</a></li>-->
-<!--												<li><a href="men-style-zone-watches.html">Watches</a></li>-->
-<!--												<li><a href="men-style-zone-brands.html">Brands</a></li>-->
-<!--												<li><a href="men-style-zone-coats.html">Coats</a></li>-->
-<!--												<li><a href="men-style-zone-accessories.html">Accessories</a></li>-->
-<!--												<li><a href="men-style-zone-trousers.html">Trousers</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Popular Brands</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="men-popular-brands-449-store.html">499 Store</a></li>-->
-<!--												<li><a href="men-popular-brands-fastrack.html">Fastrack</a></li>-->
-<!--												<li><a href="men-popular-brands-casio.html">Casio</a></li>-->
-<!--												<li><a href="men-popular-brands-fossil.html">Fossil</a></li>-->
-<!--												<li><a href="men-popular-brands-maxima.html">Maxima</a></li>-->
-<!--												<li><a href="men-popular-brands-timex.html">Timex</a></li>-->
-<!--												<li><a href="men-popular-brands-tomtom.html">TomTom</a></li>-->
-<!--												<li><a href="men-popular-brands-titan.html">Titan</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
+                                        </div>
+                                        <img class="hinhdongho" src="images/dong-ho-nam-banner.jpg" style="float: right;width: 380px; margin-top: 20px; ">
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Style Zone</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="men-style-zone-shoes.html">Shoes</a></li>-->
+										<!--												<li><a href="men-style-zone-watches.html">Watches</a></li>-->
+										<!--												<li><a href="men-style-zone-brands.html">Brands</a></li>-->
+										<!--												<li><a href="men-style-zone-coats.html">Coats</a></li>-->
+										<!--												<li><a href="men-style-zone-accessories.html">Accessories</a></li>-->
+										<!--												<li><a href="men-style-zone-trousers.html">Trousers</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Popular Brands</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="men-popular-brands-449-store.html">499 Store</a></li>-->
+										<!--												<li><a href="men-popular-brands-fastrack.html">Fastrack</a></li>-->
+										<!--												<li><a href="men-popular-brands-casio.html">Casio</a></li>-->
+										<!--												<li><a href="men-popular-brands-fossil.html">Fossil</a></li>-->
+										<!--												<li><a href="men-popular-brands-maxima.html">Maxima</a></li>-->
+										<!--												<li><a href="men-popular-brands-timex.html">Timex</a></li>-->
+										<!--												<li><a href="men-popular-brands-tomtom.html">TomTom</a></li>-->
+										<!--												<li><a href="men-popular-brands-titan.html">Titan</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
 									</div>
 								</div>
 							</li>
-							<li class="grid"><a href="#">Nữ</a>
+							<li class="grid"><a href="donghonu.html">Nữ</a>
 								<div class="mepanel">
 									<div class="row">
 										<div class="col1 me-one">
 											<h4>Hãng</h4>
-											<ul>
+											<ul style="float: left;">
 												<li><a href="nu-casio.html">Đồng Hồ Casio</a></li>
 												<li><a href="nu-citizen.html">Đồng Hồ Citizen</a></li>
 												<li><a href="nu-doxa.html">Đồng Hồ Doxa</a></li>
 												<li><a href="nu-fouette.html">Đồng Hồ Fouette</a></li>
-												<li><a href="nu-saga.html">Đồng Hồ Saga</a></li>
-<!--												<li><a href="women-shop-t-shirts.html">T-Shirts</a></li>-->
-<!--												<li><a href="women-shop-watches.html">Watches</a></li>-->
-<!--												<li><a href="women-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
-											</ul>
-										</div>
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Style Zone</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="women-style-zone-shoes.html">Shoes</a></li>-->
-<!--												<li><a href="women-style-zone-watches.html">Watches</a></li>-->
-<!--												<li><a href="women-style-zone-brands.html">Brands</a></li>-->
-<!--												<li><a href="women-style-zone-coats.html">Coats</a></li>-->
-<!--												<li><a href="women-style-zone-accessories.html">Accessories</a></li>-->
-<!--												<li><a href="women-style-zone-trousers.html">Trousers</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Popular Brands</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="women-popular-brands-449-store.html">499 Store</a></li>-->
-<!--												<li><a href="women-popular-brands-fastrack.html">Fastrack</a></li>-->
-<!--												<li><a href="women-popular-brands-casio.html">Casio</a></li>-->
-<!--												<li><a href="women-popular-brands-fossil.html">Fossil</a></li>-->
-<!--												<li><a href="women-popular-brands-maxima.html">Maxima</a></li>-->
-<!--												<li><a href="women-popular-brands-timex.html">Timex</a></li>-->
-<!--												<li><a href="women-popular-brands-tomtom.html">TomTom</a></li>-->
-<!--												<li><a href="women-popular-brands-titan.html">Titan</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
+                                                <li><a href="nu-saga.html">Đồng Hồ Saga</a></li>
+                                               
+
+												<!--												<li><a href="women-shop-t-shirts.html">T-Shirts</a></li>-->
+												<!--												<li><a href="women-shop-watches.html">Watches</a></li>-->
+												<!--												<li><a href="women-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
+                                            </ul>
+                                            
+                                        </div>
+                                        <img class="hinhdongho" src="images/dong-ho-nu-.png" style="float: right;width: 380px; margin-top: 20px; ">
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Style Zone</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="women-style-zone-shoes.html">Shoes</a></li>-->
+										<!--												<li><a href="women-style-zone-watches.html">Watches</a></li>-->
+										<!--												<li><a href="women-style-zone-brands.html">Brands</a></li>-->
+										<!--												<li><a href="women-style-zone-coats.html">Coats</a></li>-->
+										<!--												<li><a href="women-style-zone-accessories.html">Accessories</a></li>-->
+										<!--												<li><a href="women-style-zone-trousers.html">Trousers</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Popular Brands</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="women-popular-brands-449-store.html">499 Store</a></li>-->
+										<!--												<li><a href="women-popular-brands-fastrack.html">Fastrack</a></li>-->
+										<!--												<li><a href="women-popular-brands-casio.html">Casio</a></li>-->
+										<!--												<li><a href="women-popular-brands-fossil.html">Fossil</a></li>-->
+										<!--												<li><a href="women-popular-brands-maxima.html">Maxima</a></li>-->
+										<!--												<li><a href="women-popular-brands-timex.html">Timex</a></li>-->
+										<!--												<li><a href="women-popular-brands-tomtom.html">TomTom</a></li>-->
+										<!--												<li><a href="women-popular-brands-titan.html">Titan</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
 									</div>
 								</div>
 							</li>
-							<li class="grid"><a href="#">Cặp Đôi</a>
+							<li class="grid"><a href="donghocap.html">Cặp Đôi</a>
 								<div class="mepanel">
 									<div class="row">
 										<div class="col1 me-one">
@@ -197,35 +206,37 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 												<li><a href="capdoi-seiko.html">Đồng Hồ Seiko</a></li>
 												<li><a href="capdoi-citizen.html">Đồng Hồ Citizen</a></li>
 												<li><a href="capdoi-DW.html">Đồng Hồ Daniel Wellington</a></li>
-<!--												<li><a href="kids-shop-t-shirts.html">T-Shirts</a></li>-->
-<!--												<li><a href="kids-shop-watches.html">Watches</a></li>-->
-<!--												<li><a href="kids-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
+												<!--												<li><a href="kids-shop-t-shirts.html">T-Shirts</a></li>-->
+												<!--												<li><a href="kids-shop-watches.html">Watches</a></li>-->
+												<!--												<li><a href="kids-shop-my-shopping-bag.html">My Shopping Bag</a></li>-->
 											</ul>
-										</div>
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Style Zone</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="kids-style-zone-shoes.html">Shoes</a></li>-->
-<!--												<li><a href="kids-style-zone-watches.html">Watches</a></li>-->
-<!--												<li><a href="kids-style-zone-brands.html">Brands</a></li>-->
-<!--												<li><a href="kids-style-zone-coats.html">Coats</a></li>-->
-<!--												<li><a href="kids-style-zone-accessories.html">Accessories</a></li>-->
-<!--												<li><a href="kids-style-zone-trousers.html">Trousers</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--										<div class="col1 me-one">-->
-<!--											<h4>Popular Brands</h4>-->
-<!--											<ul>-->
-<!--												<li><a href="kids-popular-brands-449-store.html">499 Store</a></li>-->
-<!--												<li><a href="kids-popular-brands-fastrack.html">Fastrack</a></li>-->
-<!--												<li><a href="kids-popular-brands-casio.html">Casio</a></li>-->
-<!--												<li><a href="kids-popular-brands-fossil.html">Fossil</a></li>-->
-<!--												<li><a href="kids-popular-brands-maxima.html">Maxima</a></li>-->
-<!--												<li><a href="kids-popular-brands-timex.html">Timex</a></li>-->
-<!--												<li><a href="kids-popular-brands-tomtom.html">TomTom</a></li>-->
-<!--												<li><a href="kids-popular-brands-titan.html">Titan</a></li>-->
-<!--											</ul>-->
-<!--										</div>-->
+                                        </div>
+                                        <img class="hinhdongho" src="images/banner-doi.jpg" style="float: right;width: 380px; margin-top: 20px; ">
+                                   
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Style Zone</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="kids-style-zone-shoes.html">Shoes</a></li>-->
+										<!--												<li><a href="kids-style-zone-watches.html">Watches</a></li>-->
+										<!--												<li><a href="kids-style-zone-brands.html">Brands</a></li>-->
+										<!--												<li><a href="kids-style-zone-coats.html">Coats</a></li>-->
+										<!--												<li><a href="kids-style-zone-accessories.html">Accessories</a></li>-->
+										<!--												<li><a href="kids-style-zone-trousers.html">Trousers</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
+										<!--										<div class="col1 me-one">-->
+										<!--											<h4>Popular Brands</h4>-->
+										<!--											<ul>-->
+										<!--												<li><a href="kids-popular-brands-449-store.html">499 Store</a></li>-->
+										<!--												<li><a href="kids-popular-brands-fastrack.html">Fastrack</a></li>-->
+										<!--												<li><a href="kids-popular-brands-casio.html">Casio</a></li>-->
+										<!--												<li><a href="kids-popular-brands-fossil.html">Fossil</a></li>-->
+										<!--												<li><a href="kids-popular-brands-maxima.html">Maxima</a></li>-->
+										<!--												<li><a href="kids-popular-brands-timex.html">Timex</a></li>-->
+										<!--												<li><a href="kids-popular-brands-tomtom.html">TomTom</a></li>-->
+										<!--												<li><a href="kids-popular-brands-titan.html">Titan</a></li>-->
+										<!--											</ul>-->
+										<!--										</div>-->
 									</div>
 								</div>
 							</li>
@@ -292,12 +303,161 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--End-slider-script-->
 	<!--about-starts-->
 
+	<form style="margin-top: -556px;" id="formdangnhap" onsubmit="return formdangnhap1()">
+		<div class="dangnhap">
+
+
+			<i id="close" class="fas fa-times-circle"></i>
+			<h2>Đăng nhập</h2>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email/SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email4" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message4"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mật khẩu</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email5" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message5"></p>
+				</div>
+			</div>
+			<div class="quenmatkhau">
+
+			</div>
+			<div class="quenmatkhau">
+				<p>Quên mật khẩu? Nhấn vào <a id="day">đây</a> </p>
+			</div>
+
+			<input type="submit" id="buttondangnhap" value="Đăng nhập">
+			<div class="buttondangnhap2">
+				<p class="btndangnhap">Đăng nhập băng Facebook</p>
+			</div>
+			<div class="buttondangnhap3">
+				<p class="btndangnhap">Đăng nhập băng Google</p>
+			</div>
+			<div class="buttondangnhap4">
+				<p class="btndangnhap"> Đăng nhập bằng Zalo</p>
+			</div>
+
+			<p class="linkdangky">Bạn mới biết đến HKT? <a id="close1">Đăng ký </a> </p>
+		</div>
+
+	</form>
+
+	<div class="oquenmatkhau">
+		<form id="oquenmatkhau1" onsubmit="return oquenmatkhau2()">
+
+			<i id="close" class="fas fa-times-circle" style="   margin-top: -41px;
+			margin-right: -24px;"></i>
+			<h2>Quên mật khẩu</h2>
+			<p>Vui lòng cung cấp email hoặc số điện thoại đăng nhập để lấy lại mật khẩu.</p>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email/SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email6" name="email" placeholder="Nhập Email hoặc Số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+
+				</div>
+
+
+			</div>
+			<div class="baoloi1">
+				<p id="message6"></p>
+			</div>
+
+			<button class="buttondangnhap3">
+				Gửi
+			</button>
+		</form>
+
+	</div>
+	<div class="dangki">
+		<form id="formdangki" onsubmit="return formdangki1()">
+
+			<i id="close" class="fas fa-times-circle" style="   margin-top: -41px;
+			margin-right: -24px;"></i>
+			<h2>Đăng kí </h2>
+			<div class="tinh">
+				<div class="trai">
+					<p>Họ tên</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email7" name="email" placeholder="Nhập họ tên"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message7"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>SĐT</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email8" name="password" placeholder="Nhập số điện thoại"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message8"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mã xác thực</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email9" name="password" placeholder="Nhập mã xác thực "
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message9"></p>
+				</div>
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Email</p>
+				</div>
+				<div class="phai">
+					<input type="text" id="email10" name="password" placeholder="Nhập email"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message10"></p>
+				</div>
+
+			</div>
+			<div class="tinh">
+				<div class="trai">
+					<p>Mật khẩu</p>
+				</div>
+				<div class="phai">
+					<input type="password" id="email11" name="password" placeholder="Mật khẩu từ 6 đến 32 ký tự"
+						class="Input-sc-17i9bto-0 bYlDgr" value="">
+					<p class="baoloi" id="message11"></p>
+				</div>
+			</div>
+			<div class="quenmatkhau">
+
+			</div>
+
+
+
+			<input type="submit" class="buttondangki" value="Đăng kí">
+		</form>
+
+
+	</div>
+
 	<div class="about">
 		<div class="container">
 			<div class="about-top grid-1">
 				<div class="col-md-4 about-left">
 					<figure class="effect-bubba">
-						<img class="img-responsive1" src="images/donghonam1.png" alt="" />
+						<a href="">
+							<img class="img-responsive1" src="images/donghonam1.png" alt="" />
+						</a>
 
 						<div class="bangron">
 							<p> ĐỒNG HỒ NAM</p>
@@ -306,7 +466,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 about-left">
 					<figure class="effect-bubba">
+						<a href="donghonu.html">
 						<img class="img-responsive1" src="images/donghonu1.png" alt="" />
+					</a>
 						<div class="bangron">
 							<p> ĐỒNG HỒ NỮ </p>
 						</div>
@@ -314,9 +476,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="col-md-4 about-left">
 					<figure class="effect-bubba">
-						<img class="img-responsive1" src="images/donghotreem.png" alt="" />
+						<a href="donghocap.html">
+							<img class="img-responsive1" src="images/download.jpg" alt="" />
+						</a>
 						<div class="bangron">
-							<p> ĐỒNG HỒ TRẺ EM</p>
+							<p> ĐỒNG HỒ CẶP ĐÔI</p>
 						</div>
 					</figure>
 				</div>
@@ -334,18 +498,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<a href=""><img src="images/dinhkimcuong.png" alt=""></a>
 	</div>
 	<div class="quangcaobentrai">
-		<img style="height: 500px; margin-left: 30px;margin-top: 100px;" src="images/tranthanhbentrai.png" >
+		<img style="height: 500px; margin-left: 30px;margin-top: 100px;" src="images/tranthanhbentrai.png">
 	</div>
 	<div class="quangcaobenphai">
-		<img style="height: 500px; margin-right: 30px;margin-top: 100px;"   src="images/tranthanhbenphai.png" >
+		<img style="height: 500px; margin-right: 30px;margin-top: 100px;" src="images/tranthanhbenphai.png">
 	</div>
 	<div class="duongke"></div>
 
 	<div class="sanphambanchay">
 		<p>Đồng hồ nam bán chạy</p>
+
 	</div>
 	<!--about-end-->
 	<!--product-starts-->
+
 	<div class="product">
 		<div class="container">
 			<div class="product-top">
@@ -359,13 +525,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3>Casio AE-1200WHD-1AVDF – Nam – Kính Nhựa – Quartz (Pin) – Dây Kim Loại</h3>
 								</div>
 
-								<h4 id="gia"><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
+								<h4 id="gia"><span class="item_price" id="giadagiam">25.000.000 <u>đ</u></span><span
 										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-15%</span>
 							</div>
 						</div>
 					</div>
@@ -377,12 +543,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Doxa D173TCM – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim Loại</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">28.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">27.550.000<u>đ</u></span>
 								</h4>
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-5%</span>
 							</div>
 						</div>
 					</div>
@@ -394,13 +560,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Doxa D158KWH – Nữ – Kính Sapphire – Quartz (Pin) – Dây Da</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">30.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc"></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								
 							</div>
 						</div>
 					</div>
@@ -413,12 +579,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3>Longines L4.759.4.12.2 – Nam – Kính Sapphire – Quartz (Pin) – Dây Da</h3>
 								</div>
 								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										class=" item_price" id="giagoc"></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								
 							</div>
 						</div>
 					</div>
@@ -451,13 +617,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Casio Nam – Quartz (Pin) – Dây Da (MTP-1370L-7AVDF)</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">29.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">28.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-2%</span>
 							</div>
 						</div>
 					</div>
@@ -470,13 +636,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3>Tissot T006.407.11.033.00 – Nam – Kính Sapphire – Automatic (Tự Động) – Dây Kim
 										Loại</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">15.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc"></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								
 							</div>
 						</div>
 					</div>
@@ -494,7 +660,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-10%</span>
 							</div>
 						</div>
 					</div>
@@ -525,13 +691,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3>Doxa D158KWH – Nữ – Kính Sapphire – Quartz (Pin) – Dây Da</h3>
 								</div>
 
-								<h4 id="gia"><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4 id="gia"><span class="item_price" id="giadagiam">26.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">25.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-2%</span>
 							</div>
 						</div>
 					</div>
@@ -543,12 +709,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Doxa D174SCM – Nữ – Kính Sapphire – Quartz (Pin) – Dây Kim Loại</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">10.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">9.550.000<u>đ</u></span>
 								</h4>
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-5%</span>
 							</div>
 						</div>
 					</div>
@@ -561,12 +727,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<h3>Doxa D158KWH – Nữ – Kính Sapphire – Quartz (Pin) – Dây Da</h3>
 								</div>
 								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										class=" item_price" id="giagoc">21.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-2%</span>
 							</div>
 						</div>
 					</div>
@@ -578,13 +744,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Fouetté OR-1 – Nữ – Quartz (Pin) – Dây Da</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">36.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">33.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-6%</span>
 							</div>
 						</div>
 					</div>
@@ -601,12 +767,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</h3>
 								</div>
 								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+										class=" item_price" id="giagoc"></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								
 							</div>
 						</div>
 					</div>
@@ -625,7 +791,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-10%</span>
 							</div>
 						</div>
 					</div>
@@ -637,13 +803,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Saga 53555 SVMWSV-2 – Nữ – Quartz (Pin) – Dây Kim Loại</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">28.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc"></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								
 							</div>
 						</div>
 					</div>
@@ -655,13 +821,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="ten">
 									<h3>Seiko SUP280P1 – Nữ – Solar (Năng Lượng Ánh Sáng) – Dây Titanium</h3>
 								</div>
-								<h4><span class="item_price" id="giadagiam">20.000.000 <u>đ</u></span><span
-										class=" item_price" id="giagoc">22.550.000<u>đ</u></span>
+								<h4><span class="item_price" id="giadagiam">27.000.000 <u>đ</u></span><span
+										class=" item_price" id="giagoc">25.550.000<u>đ</u></span>
 								</h4>
 
 							</div>
 							<div class="srch">
-								<span>-50%</span>
+								<span>-8%</span>
 							</div>
 						</div>
 					</div>
@@ -673,12 +839,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!--product-end-->
 	<!--information-starts-->
 	<div class="information">
-		
+
 	</div>
 	<!--information-end-->
 	<!--footer-starts-->
 	<div class="footer">
-		
+
 		<div class="container">
 			<div class="footer-top">
 				<div class="col-md-6 footer-left">

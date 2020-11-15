@@ -1578,7 +1578,9 @@ span.cost {
     margin-top: 1.4em !important;
 }
 .in-check {
-	margin-top: 2%;
+    margin-top: 2%;
+    width: 800px;
+    float: left;
 }
 .cart-header,.cart-header1,.cart-header2{
 	position:relative;
@@ -3338,3 +3340,35 @@ float: left;
 }
 
 /*End phan menu tiki*/
+.othanhtoan{
+    width: 308x;
+    float: right;
+    height: 500px;
+   
+}
+.othanhtoan1{
+    height: 90px;
+    width: 300px;
+    background-color: #80808017;
+    margin-top: 21px;
+}
+.othanhtoan2{
+    height: 90px;
+    width: 300px;
+    background-color: #80808017;display: block;
+    
+}
+.tamtinh{
+    width: 100px;
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.total1{
+    width: 90px;
+    float: right;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
