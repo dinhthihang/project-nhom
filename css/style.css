@@ -823,7 +823,7 @@ a.mask {
     margin: 0;
 }
 .infor-left ul li a p:hover{
-	color:##ff6600;
+	color:#ff6600;
 }
 .infor-left ul li a:hover{
 	text-decoration:none;
@@ -3257,3 +3257,84 @@ ul.tag-men {
     margin-bottom: 10px;
 
 }
+/*Phan menu tiki*/
+.box2{
+    height: 30px;
+}
+.box2>a {
+color: white;
+text-decoration: none;
+cursor: pointer;
+font-size: 14px;
+float: left;
+
+}
+.box2>a:hover{
+    opacity: 0.7;
+}
+.box2>ul{
+    position: absolute;
+    z-index: 10;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 260px;
+    float: right;
+    top: 40px;
+    margin-left: 150px;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box2 ul li a {
+   text-decoration: none;
+   cursor: pointer;
+}
+.box2 ul li{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.box2 ul li:hover{
+    opacity: 0.9;
+}
+.box2 ul .menu-tiki1{
+  
+   background-color: #fdd835;
+}
+.box2 ul .menu-tiki2{
+    background-color: #fdd835;
+ }
+ .box2 ul .menu-tiki3{
+    background-color: #3b5998;
+   
+ }
+ 
+ .box2 ul .menu-tiki4{
+    background-color: #df4a32;
+ }
+ .box2 ul .menu-tiki5{
+    background-color: #0f8edd;
+    
+ }
+ .box2 ul .menu-tiki1 a{
+    color: #4a4a4a;
+}
+.box2 ul .menu-tiki2 a{
+    color: #4a4a4a;
+}
+.box2 ul .menu-tiki3 a{
+    color: #f5f7fa;
+}
+.box2 ul .menu-tiki4 a{
+    color: #f5f7fa;
+}
+.box2 ul .menu-tiki5 a{
+    color: #f5f7fa;
+}
+.box2:hover ul{
+  display: block;
+}
+
+/*End phan menu tiki*/
