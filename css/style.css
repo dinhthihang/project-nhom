@@ -3260,16 +3260,17 @@ ul.tag-men {
 
 }
 /*Phan menu tiki*/
-.box2{
-    height: 30px;
-}
+
 .box2>a {
 color: white;
 text-decoration: none;
 cursor: pointer;
 font-size: 14px;
 float: left;
-
+position: relative;
+left: 700px;
+z-index: 10000;
+height: 30px;
 }
 .box2>a:hover{
     opacity: 0.7;
@@ -3283,7 +3284,7 @@ float: left;
     height: 260px;
     float: right;
     top: 40px;
-    margin-left: 150px;
+    margin-left: 850px;
     display: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
