@@ -1366,7 +1366,7 @@ a.mask {
 	margin-top:4%;
 }
 .contact-right input[type="text"] {
-	width: 32.51%;
+	width: 30.51%;
 	margin: 0px;
 	color: #000;
 	background: none;
@@ -1376,7 +1376,7 @@ a.mask {
 	font-family: 'Lato-Regular';
 }
 .contact-right textarea {
-	width: 100%;
+	width: 94%;
 	color: #000;
 	resize: none;
 	background: none;
