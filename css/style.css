@@ -433,6 +433,7 @@ span.simpleCart_total {
   width: 80%;
   border: 0;
   margin-left: 10%;
+  margin-bottom: 40px;
 }
 .callbacks_tabs {
 	list-style: none;
@@ -3373,3 +3374,219 @@ height: 30px;
     font-size: 20px;
 }
 
+
+
+.woocommerce-Reviews-title {
+    font-size: 18px;
+    display: none;
+}
+.star_box {
+    border: 1px solid #ddd;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0 20px;
+    overflow: hidden;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 96%;
+    margin-left: 15px;
+}
+.star_box_left {
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-negative: 1;
+    -ms-flex-preferred-size: auto!important;
+}
+.reviews_bar {
+    line-height: 1;
+}
+.devvn_review_row {
+    padding-bottom: 10px;
+    position: relative;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 95%;
+}
+span.devvn_stars_value {
+    line-height: 1;
+}
+span.devvn_rating_bar {
+    -ms-flex: 1;
+    flex: 1;
+    -ms-flex-negative: 1;
+    -ms-flex-preferred-size: auto!important;
+    padding: 0 10px;
+}
+span.devvn_num_reviews {
+    min-width: 150px;
+    color: #ff6600;
+}
+.star_box_right {
+    width: 190px;
+    text-align: center;
+}
+div#review_form_wrapper {
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 590px;
+    background: #fff;
+    margin: 0 auto;
+    position: relative;
+}
+#review_form_wrapper #review_form {
+    width: 100%;
+    float: none;
+}
+div#review_form_wrapper button.fancybox-button.fancybox-close-small {
+    background: #000;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 0;
+    overflow: hidden;
+    padding: 0;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 5px;
+    position: absolute;
+    outline: 0;
+    margin: 0;
+    min-height: inherit;
+    line-height: inherit;
+}
+#comments a.btn-reviews-now {
+    background-color: #ff6600;
+    color: #5d5b5b;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+.devvn_prod_cmt {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto 30px;
+    position: relative;
+}
+.devvn_cmt_list_header {
+    
+    margin: 0 0 20px;
+}
+.devvn_cmt_lheader_left {
+    float: left;
+}
+.devvn_cmt_lheader_left span {
+    font-size: 16px;
+    font-weight: 700;
+}
+.devvn_cmt_lheader_right {
+    float: right;
+}
+.devvn_cmt_input textarea {
+    height: 100px;
+    border-radius: 3px 3px 0 0;
+    display: block;
+    margin: 0;
+}
+
+#devvn_cmt_replyname{
+    background-color: gray;
+}
+.fas{
+    color: #ff6600;
+    margin-left: 5px;
+}
+{box-sizing: border-box;}
+
+/* Nút Để Mở Chatbox */
+.nut-mo-chatbox {
+    background:rgba(0,0,0,0);
+
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    /* width: 280px; */
+    height: 71px;
+    border-radius: 50%;
+}
+
+/* Ẩn chatbox mặc định */
+.Chatbox {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Thêm style cho form */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  
+}
+
+/* thiết lập style textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 100px;
+}
+
+/*thiết lập style cho textarea khi được focus */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Sthiết lập style cho nút trong form*/
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Thiết lập màu nền cho nút đóng chatbox */
+.form-container .nut-dong-chatbox {
+  background-color: red;
+}
+
+/* Thêm hiệu ứng hover cho nút*/
+.form-container .btn:hover, .nut-mo-chatbox:hover {
+  opacity: 1;
+}

@@ -65,7 +65,7 @@ $(document).ready(function () {
                 $('.oquenmatkhau').fadeIn();
             })
 
-            $('#close1').click(function () {
+            $('#close5').click(function () {
                 $('body').append('<div id="over"></div>');
                 $('#over').fadeIn();
 
@@ -100,16 +100,14 @@ $(document).ready(function () {
 
 
 
-    
-
-            $('#close1').click(function () {
-                $('body').append('<div id="over"></div>');
-                $('#over').fadeIn();
-
-               
-                $('.dangki').fadeIn();
 
 
+    $('#close1').click(function () {
+        $('body').append('<div id="over"></div>');
+        $('#over').fadeIn();
+
+
+        $('.dangki').fadeIn();
 
 
 
@@ -118,7 +116,9 @@ $(document).ready(function () {
 
 
 
-         
+
+
+
 
     })
 
@@ -252,3 +252,10 @@ $(document).ready(function () {
         $(".prev span").text(y);
     });
 });
+function moForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  /*Hàm Đóng Form*/
+  function dongForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
