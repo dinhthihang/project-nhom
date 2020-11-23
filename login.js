@@ -65,7 +65,7 @@ $(document).ready(function () {
                 $('.oquenmatkhau').fadeIn();
             })
 
-            $('#close1').click(function () {
+            $('#close5').click(function () {
                 $('body').append('<div id="over"></div>');
                 $('#over').fadeIn();
 
