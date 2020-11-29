@@ -1,5 +1,6 @@
 $(document).ready(function () {
-   
+    $('body').append('<div id="over"></div>');
+    $('#over').fadeIn();
 
     $('#close3').click(function () {
 
