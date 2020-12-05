@@ -19,7 +19,12 @@ body a{
 	-ms-transition: 0.5s all;
 }
 
-
+@media only screen and (max-width: 1360px){
+    .hinhcuatranthanh{
+        display: none;
+        
+    }
+  }
 @font-face {
     font-family: 'Lora-Regular';
     src:url(../fonts/Lora-Regular.ttf) format('truetype');
@@ -3774,7 +3779,7 @@ div#review_form_wrapper button.fancybox-button.fancybox-close-small {
   
   }
   .aa img{
-      border-radius: 50%;
+      border-radius: 5%;
       background-color: white;
     margin-right: 50px;
       
