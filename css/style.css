@@ -883,6 +883,7 @@ a.mask {
     color: #000;
     font-size: 11px;
     background: none;
+    margin-top: 11px;
     padding: 8px 10px;
     outline: none;
     border: none;
@@ -3874,8 +3875,80 @@ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 transition: all 250ms ease-in-out 0s;
 
 }
+.hotline{
+    width:100%; height: 150px; background-color: #f7f7f7;margin: auto;padding-left: 12%;padding-top: 3%;
+    display: flex;
+}
+.chinhtheodienthoai{
+    width:45%;text-align: center;
+}
+.chinhdienthoai1{
+    width:59%; text-align: center;
+}
 .icondienthoan{
   font-size: 30px;
   margin-right: 5%;
   margin-left: 29px;
 }
+.sodienthoai{
+    font-size: 25px;
+}
+.coppyright{
+    text-align: center;
+}
+
+@media screen and (max-width: 360px)  {
+.hotline{
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+.chuhotline{
+    float: left;
+    margin-top: 6px;
+}
+.icondienthoan{
+    float: right;
+
+}
+.sodienthoai{
+    font-size: 25px;
+    float: right;
+    margin-right: -195px;
+}
+.chinhdienthoai1{
+    margin-top: 10px;
+    width: 84%;
+
+}
+.footer-copyright{
+    display: flex;
+}
+.box2>a{
+   left: 132px;
+   margin-top: -14px;
+}
+.box2>ul {
+    margin-left: 0px;
+    margin-left: 64px;
+    width: 210px;
+}
+
+}
+.thanhtoan{
+    font-size: 30px;
+}
+ .cart__submit {
+    background: rgb(255, 66, 78);
+    color: rgb(255, 255, 255);
+    padding: 13px 10px;
+    text-align: center;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    display: block;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+
