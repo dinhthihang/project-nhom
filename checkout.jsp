@@ -1,52 +1,57 @@
-<!--A Design by W3layouts 
+<%@ page import="vn.edu.nlu.mode.Cart" %>
+<%@ page import="vn.edu.nlu.bean.Product" %>
+<%@ page import="java.util.Collection" %>
+<!--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+
+<%@page contentType="text/html;charset=UTF-8" language="java"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <!DOCTYPE html>
 <html>
 
-<head>
+	<head>
 
 
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
-		id="bootstrap-css">
-	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<link href="images/donghonambanchay/120_131.60.022.02-399x399.webp" rel="shortcut icon">
-
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
-	<title>Giỏ hàng - Luxury Watches</title>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-	<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
-
-	<!--Custom-Theme-files-->
-	<!--theme-style-->
-	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="login.js"></script>
-	<script type="text/javascript" src="login.js"></script>
-	<link rel="stylesheet" href="login.css">
-	<!--//theme-style-->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="Luxury Watches Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet"
+			id="bootstrap-css">
+		<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+		<link  href="images/donghonambanchay/120_131.60.022.02-399x399.webp" rel="shortcut icon">
+	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	
+		<title>Giỏ hàng - Luxury Watches</title>		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+		<!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
+	
+		<!--Custom-Theme-files-->
+		<!--theme-style-->
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="login.js"></script>
+		<script type="text/javascript" src="login.js"></script>
+		<link rel="stylesheet" href="login.css">
+		<!--//theme-style-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="Luxury Watches Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-	<script
-		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-	<!--start-menu-->
-	<script src="js/simpleCart.min.js"> </script>
-	<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
-	<script type="text/javascript" src="js/memenu.js"></script>
-	<script>$(document).ready(function () { $(".memenu").memenu(); });</script>
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-	<!--dropdown-->
-	<script src="js/jquery.easydropdown.js"></script>
-</head>
-
+		<script
+			type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--start-menu-->
+		<script src="js/simpleCart.min.js"> </script>
+		<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/memenu.js"></script>
+		<script>$(document).ready(function () { $(".memenu").memenu(); });</script>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+		<!--dropdown-->
+		<script src="js/jquery.easydropdown.js"></script>
+	</head>
 <body>
 	<!--top-header-->
 	<div class="top-header">
@@ -310,62 +315,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							});
 						});
 					</script>
-					
+
 					<div class="in-check">
 						<ul class="unit">
 							<li><span></span></li>
 							<li><span>Tên sản phẩm</span></li>
-							<li><span>Số lượng</span></li>
-							<li><span>Giá</span></li>
+                            <li><span>Số lượng</span></li>
+                            <li><span>Giá</span></li>
 							<li><span>Chi tiết giao hàng</span></li>
 							<li> </li>
 							<div class="clearfix"> </div>
 						</ul>
+                        <% Cart c= Cart.getCart(session);
+                            Collection<Product>data =c.getData(); %>
+                        <c:forEach items="data" var ="d">
 						<ul class="cart-header">
 							<div class="close1"> </div>
-							<li class="ring-in"><a href="single.html"><img src="images/LTP-1335D-7AVDF-399x399.png"
-										class="img-responsive" alt=""></a>
+							<li class="ring-in"><a href="single.html"><img src="${d.img}" class="img-responsive"
+										alt="" height="70"></a>
 							</li>
-							<li><span class="name">Analog Watches</span></li>
-							<li><span class="name">
+                            <li><span class="name123">
 									<div class="buttons_added">
 										<input class="minus is-form" type="button" value="-">
 										<input aria-label="quantity" class="input-qty" max="10" min="1" name=""
-											type="number" value="1"> <input class="plus is-form" type="button"
-											value="+">
+                                               type="number" value="1"> <input class="plus is-form" type="button"
+                                                                               value="+">
 									</div>
 								</span>
-							</li>
-							<li><span class="cost">$ 290.00</span></li>
+                            </li>
+							<li><span class="name">${d.name}</span></li>
+							<li><span class="cost">${d.priceSale}</span></li>
 							<li><span>Free</span>
 								<p>Delivered in 2-3 business days</p>
 							</li>
 							<div class="clearfix"> </div>
 						</ul>
-						<ul class=" cart-header1">
-							<div class="close2"> </div>
-							<li class="ring-in"><a href="single.html"><img src="images/64_LTP-2085SG-7AVDF-399x399.png"
-										class="img-responsive" alt=""></a>
-							</li>
-							<li><span class="name">Analog Watches</span></li>
-							<li><span class="cost">$ 300.00</span></li>
-							<li><span>Free</span>
-								<p>Delivered in 2-3 business days</p>
-							</li>
-							<div class="clearfix"> </div>
-						</ul>
-						<ul class="cart-header2">
-							<div class="close3"> </div>
-							<li class="ring-in"><a href="single.html"><img src="images/90_D158KWH-399x399.webp"
-										class="img-responsive" alt=""></a>
-							</li>
-							<li><span class="name">Analog Watches</span></li>
-							<li><span class="cost">$ 360.00</span></li>
-							<li><span>Free</span>
-								<p>Delivered in 2-3 business days</p>
-							</li>
-							<div class="clearfix"> </div>
-						</ul>
+                        </c:forEach>
+
 					</div>
 					<div class="othanhtoan">
 						<div class="othanhtoan1">
@@ -373,44 +359,41 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<p class="tamtinh">Tạm tính</p>
 								<a href="checkout.html">
 									<div class="total total1">
-										<span style="font-size: 15px;color: black;" class="simpleCart_total"></span>
-									</div>
+										<span style="font-size: 15px;color: black;" class="simpleCart_total"></span></div>
 
 								</a>
+								
 
 
-
-
+							
 							</div>
-
+							
 						</div>
 						<div class="othanhtoan2">
 							<div>
 								<p class="tamtinh">Tạm tính</p>
 								<a href="checkout.html">
 									<div class="total total1">
-										<span style="font-size: 20px;color: #ff6600;" class="simpleCart_total"></span>
-									</div>
-
+										<span style="font-size: 20px;color: #ff6600;" class="simpleCart_total"></span></div>
+										
 								</a>
+								
+								
 
 
-
-
-
+							
 							</div>
 							<p style="    padding-top: 53px;
 							margin-left: 116px;
 							font-size: 12px;">Đã bao gồm thuế VAT nếu có</p>
 
-
+							
 						</div>
 						<div class="othanhtoan2" style="background-color: white;">
-							<a style="text-decoration: none;" href="thanhtoan.html"><button type="button"
-									class="cart__submit">Tiến hành đặt hàng</button></a>
+							<a style="text-decoration: none;" href="thanhtoan.html"><button type="button" class="cart__submit">Tiến hành đặt hàng</button></a>
+							
 
-
-
+							
 						</div>
 
 
@@ -421,28 +404,28 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			</div>
 		</div>
 	</div>
-	<script>
-						$('input.input-qty').each(function () {
-							var $this = $(this),
-								qty = $this.parent().find('.is-form'),
-								min = Number($this.attr('min')),
-								max = Number($this.attr('max'))
-							if (min == 0) {
-								var d = 0
-							} else d = min
-							$(qty).on('click', function () {
-								if ($(this).hasClass('minus')) {
-									if (d > min) d += -1
-								} else if ($(this).hasClass('plus')) {
-									var x = Number($this.val()) + 1
-									if (x <= max) d += 1
-								}
-								$this.attr('value', d).val(d)
-							})
-						})
-					</script>
 	<!--end-ckeckout-->
 	<!--information-starts-->
+    <script>
+        $('input.input-qty').each(function () {
+            var $this = $(this),
+                qty = $this.parent().find('.is-form'),
+                min = Number($this.attr('min')),
+                max = Number($this.attr('max'))
+            if (min == 0) {
+                var d = 0
+            } else d = min
+            $(qty).on('click', function () {
+                if ($(this).hasClass('minus')) {
+                    if (d > min) d += -1
+                } else if ($(this).hasClass('plus')) {
+                    var x = Number($this.val()) + 1
+                    if (x <= max) d += 1
+                }
+                $this.attr('value', d).val(d)
+            })
+        })
+    </script>
 	<button class="nut-mo-chatbox" onclick="moForm()"><img style="    width: 67px;
 		border-radius: 51px" src="images/download4545.jpg"></button>
 	<div class="Chatbox" id="myForm">
@@ -472,7 +455,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<button type="button" class="btn nut-dong-chatbox" onclick="dongForm()">Đóng</button>
 		</form>
 	</div>
-
 	<!--product-end-->
 	<!--information-starts-->
 	<div class="information">

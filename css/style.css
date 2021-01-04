@@ -1558,7 +1558,7 @@ ul.cart-header li p,ul.cart-header1 li p,ul.cart-header2 li p{
     margin: 0;
 }
 ul.unit li span{
-	display:inline-block;
+	
 	color:#000;
 	font-size:1.2em;
 	text-align:center;
@@ -3949,6 +3949,65 @@ transition: all 250ms ease-in-out 0s;
     display: block;
     margin: 15px 0px;
     cursor: pointer;
+}
+.buttons_added {
+    opacity:1;
+    display:inline-block;
+    display:-ms-inline-flexbox;
+    display:inline-flex;
+    white-space:nowrap;
+    vertical-align:top;
+}
+.is-form {
+    overflow:hidden;
+    position:relative;
+    background-color:#f9f9f9;
+    height:2.2rem;
+    width:1.9rem;
+    padding:0;
+    text-shadow:1px 1px 1px #fff;
+    border:1px solid #ddd;
+}
+.is-form:focus,.input-text:focus {
+    outline:none;
+}
+.is-form.minus {
+    border-radius:4px 0 0 4px;
+}
+.is-form.plus {
+    border-radius:0 4px 4px 0;
+}
+.input-qty {
+    background-color:#fff;
+    height:2.2rem;
+    text-align:center;
+    font-size:1rem;
+    display:inline-block;
+    vertical-align:top;
+    margin:0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-left:0;
+    border-right:0;
+    padding:0;
+}
+.input-qty::-webkit-outer-spin-button,.input-qty::-webkit-inner-spin-button {
+    -webkit-appearance:none;
+    margin:0;
+}
+.devvn_cmt_box>span {
+    width: 25px;
+    height: 25px;
+    background-image: none!important;
+    background-color: #ccc;
+    margin-right: 5px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 25px;
+    font-style: normal;
+    display: inline-block;
 }
 
 
