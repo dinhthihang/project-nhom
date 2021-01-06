@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WebsiteNhom:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WebsiteNhom</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WebsiteNhom-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="WebsiteNhom:war exploded" />
+    </root>
+  </artifact>
+</component>
